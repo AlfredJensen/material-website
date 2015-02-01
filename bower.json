@@ -1,0 +1,15 @@
+{
+  "name": "ngMaterialSite",
+  "version": "0.1.0",
+  "authors": [
+    "alfredababio aababio75@gmail.com"
+  ],
+  "description": "Angularjs, Material Design and Alfred Ababio",
+  "license": "MIT",
+  "dependencies": {
+    "angular-material": "latest"
+  },
+  "resolutions": {
+    "angular-material": "master"
+  }
+}
