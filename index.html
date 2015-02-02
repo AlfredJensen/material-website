@@ -14,7 +14,8 @@
   <!-- Angular Material Dependencies -->
   <!-- CSS -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/0.6.1/angular-material.min.css" />
-  <link rel="stylesheet" type="text/css" href="./styles/css/app.css">
+  <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/css/app.css"/>
 </head>
 <body layout="column" layout-sm="column" ng-controller="AppCtrl">
   <md-toolbar layout="row">
@@ -22,6 +23,7 @@
       <span>Alfred Ababio</span>
     </h2>
   </md-toolbar>
+
   <md-card>
       <img src="./images/about-me-holi-2014.jpg" class="md-card-image">
   </md-card>
@@ -31,7 +33,7 @@
       <md-list>
         <md-item ng-repeat="title in subTitles">
           <md-item-content>
-            <div class="subtitle-wrapper">
+            <div class="subtitle-wrap">
               <span>{{title.name}}</span>
             </div>
           </md-item-content>
@@ -39,6 +41,11 @@
         </md-item>
       </md-list>
     </md-content>
+  </md-card>
+
+  <md-card>
+    
+
   </md-card>
 
   <script src="./bower_components/angular/angular.js"></script>
