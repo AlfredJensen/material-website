@@ -13,20 +13,21 @@
   <meta name="author" content="Alfred Ababio">
   <!-- Angular Material Dependencies -->
   <!-- CSS -->
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/0.6.1/angular-material.min.css" />
+  <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/0.6.1/angular-material.min.css" /> -->
   <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css" />
   <link rel="stylesheet" type="text/css" href="./styles/css/app.css"/>
 </head>
-<body  ng-controller="AppCtrl">
-<div layout="column" layout-sm="column">
+<body ng-controller="AppCtrl">
   <md-toolbar layout="row">
   <h2 class="md-toolbar-tools" md-scroll-shrink>
     <span>Alfred Ababio</span>
   </h2>
 </md-toolbar>
+<div class="container">
+  <div layout="column" layout-sm="column">
 
-  <md-card>
-    <md-content>
+  <md-card >
+    <md-content class="md-padding">
       <md-list>
         <md-item ng-repeat="title in subTitles">
           <md-item-content>
@@ -40,24 +41,21 @@
     </md-content>
   </md-card>
 
-  <md-card>
-      <img src="./images/about-me-holi-2014.jpg" class="md-card-image">
-  </md-card>
+  <md-content>
+    <md-card>
+      <img src="./images/about-me-holi-2014.jpg" />
+      <md-card-content>
+        <p> Some shit</p>
+      </md-card-content>
 
-  <md-card>
-    <md-content class="md-padding">
-    <p>
-    I am currently a Computer Science major at Northeastern University. I have experience as a full-stack Web Developer and IT Support Technician.
-    </p>
-    <p>
-      Even with all of that, I find time to get away from my computer screen. If I’m not being mesmerized by the adventures of the Justice League, I’m out cruising on my longboard or hanging out with my friends. I only started longboarding recently, but I picked it up quickly and now I rarely ever walk. I even took the opportunity to design my own longboard decal!
-    </p>
-    </md-content>
-  </md-card>
-  
+    </md-card>
+  </md-content>
+
   <md-card>
     <img src="./images/beautiful-longboard.jpg" class="md-card-image">
   </md-card>
+</div>
+
 </div>
 
 

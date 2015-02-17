@@ -1,4 +1,24 @@
+$sm-width: 768px;
+$md-width: 992px;
+$lg-width: 1200px;
+
 .subtitle-wrap {
   margin-top: 7px;
   margin-bottom: 7px;
+}
+
+.container {
+  margin: auto;
+
+  @media(min-width: $sm-width) and (max-width: $md-width - 1) {
+    width: 750px;
+  }
+
+  @media(min-width: $md-width) and (max-width: $lg-width - 1) {
+    width: 970px;
+  }
+
+  @media(min-width: $lg-width) {
+    width: 1170px;
+  }
 }
