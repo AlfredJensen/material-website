@@ -26,36 +26,45 @@
 <div class="container">
   <div layout="column" layout-sm="column">
 
-  <md-card >
-    <md-content class="md-padding">
-      <md-list>
-        <md-item ng-repeat="title in subTitles">
-          <md-item-content>
-            <div class="subtitle-wrap">
-              <span>{{title.name}}</span>
-            </div>
-          </md-item-content>
-          <md-divider ng-if="!$last"></md-divider>
-        </md-item>
-      </md-list>
-    </md-content>
-  </md-card>
 
-  <md-content>
+      <md-card>
+        <img class="card-image" src="./images/about-me-holi-2014.jpg"/>
+        <md-card-content class="card-text">
+          <p>
+            I am currently a Computer Science major at Northeastern University.
+            I have experience as a full-stack Web Developer and IT Support Technician.
+          </p>
+          <p>
+            Even with all of that, I find time to get away from my computer screen. If I’m 
+            not being mesmerized by the adventures of the Justice League, I’m out cruising 
+            on my longboard or hanging out with my friends. I only started longboarding recently, 
+            but I picked it up quickly and now I rarely ever walk. I even took the opportunity 
+            to design my own longboard decal!
+          </p>
+        </md-card-content>
+
+      </md-card>
+   
+   
     <md-card>
-      <img src="./images/about-me-holi-2014.jpg" />
-      <md-card-content>
-        <p> Some shit</p>
-      </md-card-content>
-
+      <md-content class="card-corners md-padding">
+        <md-list>
+          <md-item ng-repeat="title in subTitles">
+            <md-item-content>
+              <div class="subtitle-wrap">
+                <span>{{title.name}}</span>
+              </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+          </md-item>
+        </md-list>
+      </md-content>
     </md-card>
-  </md-content>
 
-  <md-card>
-    <img src="./images/beautiful-longboard.jpg" class="md-card-image">
-  </md-card>
-</div>
-
+    <md-card>
+      <img src="./images/beautiful-longboard.jpg" class="card-corners"/>
+    </md-card>
+  </div>
 </div>
 
 

@@ -2,9 +2,13 @@ $sm-width: 768px;
 $md-width: 992px;
 $lg-width: 1200px;
 
-.subtitle-wrap {
-  margin-top: 7px;
-  margin-bottom: 7px;
+body, html {
+  background-color: rgb(236, 236, 236);
+}
+
+.card-text {
+  background-color: #FFF;
+  margin-bottom: 0px;
 }
 
 .container {
@@ -21,4 +25,43 @@ $lg-width: 1200px;
   @media(min-width: $lg-width) {
     width: 1170px;
   }
+}
+
+@mixin border-top-radius($radius) {
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+}
+
+@mixin border-bottom-radius($radius) {
+  border-bottom-left-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+@mixin card-corners() {
+  border-radius: 2px;
+}
+
+@mixin card-images() {
+  @include border-top-radius(2px);
+}
+
+@mixin card-text() {
+  @include border-bottom-radius(2px);
+}
+
+.subtitle-wrap {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.card-corners {
+  @include card-corners();
+}
+
+.card-image {
+  @include card-images();
+}
+
+.card-text {
+  @include card-text();
 }

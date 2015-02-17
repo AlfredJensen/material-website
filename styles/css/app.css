@@ -1,6 +1,9 @@
-.subtitle-wrap {
-  margin-top: 7px;
-  margin-bottom: 7px; }
+body, html {
+  background-color: #ececec; }
+
+.card-text {
+  background-color: #FFF;
+  margin-bottom: 0px; }
 
 .container {
   margin: auto; }
@@ -13,5 +16,20 @@
   @media (min-width: 1200px) {
     .container {
       width: 1170px; } }
+
+.subtitle-wrap {
+  margin-top: 7px;
+  margin-bottom: 7px; }
+
+.card-corners {
+  border-radius: 2px; }
+
+.card-image {
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px; }
+
+.card-text {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
 
 /*# sourceMappingURL=app.css.map */
