@@ -24,27 +24,51 @@
   </h2>
 </md-toolbar>
 <div class="container">
-  <div layout="column" layout-gt-md="row">
-    
-    <md-card flex-gt-md="50">
-      <img class="card-image" src="./images/about-me-holi-2014.jpg"/>
-      <md-card-content class="card-text">
-        <p>
-          I am currently a Computer Science major at Northeastern University.
-          I have experience as a full-stack Web Developer and IT Support Technician.
-        </p>
-        <p>
-          Even with all of that, I find time to get away from my computer screen. If I’m 
-          not being mesmerized by the adventures of the Justice League, I’m out cruising 
-          on my longboard or hanging out with my friends. I only started longboarding recently, 
-          but I picked it up quickly and now I rarely ever walk. I even took the opportunity 
-          to design my own longboard decal!
-        </p>
-      </md-card-content>
-    </md-card>
-    
-    <div flex-gt-md="50">
-      <md-card>
+  <div layout="column" layout-gt-md="row" layout-align-gt-md="center center">
+
+    <div flex-gt-md="35">
+      <!-- MOBILE -->
+      <md-card hide-gt-md>
+        <img class="card-image" src="./images/about-me-holi-2014.jpg"/>
+        <md-card-content class="card-text" flex>
+          <p>
+            I am currently a Computer Science major at Northeastern University.
+            I have experience as a full-stack Web Developer and IT Support Technician.
+          </p>
+          <p>
+            Even with all of that, I find time to get away from my computer screen. If I’m 
+            not being mesmerized by the adventures of the Justice League, I’m out cruising 
+            on my longboard or hanging out with my friends. I only started longboarding recently, 
+            but I picked it up quickly and now I rarely ever walk. I even took the opportunity 
+            to design my own longboard decal!
+          </p>
+        </md-card-content>
+      </md-card>
+
+      <!-- DESKTOP -->
+      <md-card flex hide show-gt-md>
+        <img class="card-corners" src="./images/about-me-holi-2014.jpg"/>
+      </md-card>
+      <md-card flex hide show-gt-md>
+        <md-card-content class="card-corners card-text">
+          <p>
+            I am currently a Computer Science major at Northeastern University.
+            I have experience as a full-stack Web Developer and IT Support Technician.
+          </p>
+          <p>
+            Even with all of that, I find time to get away from my computer screen. If I’m 
+            not being mesmerized by the adventures of the Justice League, I’m out cruising 
+            on my longboard or hanging out with my friends. I only started longboarding recently, 
+            but I picked it up quickly and now I rarely ever walk. I even took the opportunity 
+            to design my own longboard decal!
+          </p>
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <div flex-gt-md="35" layout-align="space-between center">
+
+      <md-card flex>
         <md-content class="card-corners md-padding">
           <md-list>
             <md-item ng-repeat="title in subTitles">
@@ -59,9 +83,21 @@
         </md-content>
       </md-card>
       
-      <md-card>
+      <md-card >
         <img src="./images/beautiful-longboard.jpg" class="card-corners"/>
-      </md-card>      
+      </md-card> 
+
+      <md-card flex>
+        <md-card-content>
+          <section layout="row" layout-align="space-around center">
+              <md-button>Github</md-button>
+              <md-button md-no-ink class="md-primary">Twitter</md-button>
+              <md-button ng-disabled="true" class="md-primary">Linkedin</md-button>
+              <md-button class="md-warn">Email</md-button>
+          </section>
+        </md-card-content>
+      </md-card>
+
     </div>
   </div>
 </div>
