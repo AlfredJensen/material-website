@@ -14,6 +14,8 @@ Reconsider dividers in hobbys card
 
 Change shadow on longboard
 
+TYPOGRAPHY
+
 Navigate FAB
 Starts as normal one with both arrows depending on location
 Can also start as mini
