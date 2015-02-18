@@ -24,11 +24,11 @@
   </h2>
 </md-toolbar>
 <div class="container">
-  <div layout="column" layout-gt-md="row" layout-align-gt-md="center center">
+  <div flex layout="column" layout-gt-sm="row" layout-align-gt-sm="center center">
 
-    <div flex-gt-md="35">
+    <div flex flex-gt-sm="35" layout-align="space-between center">
       <!-- MOBILE -->
-      <md-card hide-gt-md>
+      <md-card hide-gt-sm>
         <img class="card-image" src="./images/about-me-holi-2014.jpg"/>
         <md-card-content class="card-text" flex>
           <p>
@@ -42,14 +42,21 @@
             but I picked it up quickly and now I rarely ever walk. I even took the opportunity 
             to design my own longboard decal!
           </p>
+          <md-divider></md-divider>
+          <div layout="row" layout-align="space-around center">
+            <md-button class="md-primary">Github</md-button>
+            <md-button class="md-primary">Github</md-button>
+            <md-button class="md-primary">Github</md-button>
+            <md-button class="md-primary">Github</md-button>
+          </div>
         </md-card-content>
       </md-card>
 
       <!-- DESKTOP -->
-      <md-card flex hide show-gt-md>
+      <md-card flex hide show-gt-sm>
         <img class="card-corners" src="./images/about-me-holi-2014.jpg"/>
       </md-card>
-      <md-card flex hide show-gt-md>
+      <md-card flex hide show-gt-sm>
         <md-card-content class="card-corners card-text">
           <p>
             I am currently a Computer Science major at Northeastern University.
@@ -66,7 +73,7 @@
       </md-card>
     </div>
 
-    <div flex-gt-md="35" layout-align="space-between center">
+    <div flex-gt-sm="35" layout-align="space-between center">
 
       <md-card flex>
         <md-content class="card-corners md-padding">
@@ -83,20 +90,9 @@
         </md-content>
       </md-card>
       
-      <md-card >
+      <md-card class="md-whiteframe-z1">
         <img src="./images/beautiful-longboard.jpg" class="card-corners"/>
       </md-card> 
-
-      <md-card flex>
-        <md-card-content>
-          <section layout="row" layout-align="space-around center">
-              <md-button>Github</md-button>
-              <md-button md-no-ink class="md-primary">Twitter</md-button>
-              <md-button ng-disabled="true" class="md-primary">Linkedin</md-button>
-              <md-button class="md-warn">Email</md-button>
-          </section>
-        </md-card-content>
-      </md-card>
 
     </div>
   </div>

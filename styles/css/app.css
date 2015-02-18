@@ -31,5 +31,9 @@ body, html {
 .card-text {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px; }
+  .card-text p:last-child {
+    margin-bottom: 0px; }
+  .card-text p:first-child {
+    margin-top: 0px; }
 
 /*# sourceMappingURL=app.css.map */
