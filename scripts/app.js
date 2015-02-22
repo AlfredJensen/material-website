@@ -38,4 +38,9 @@ app.controller('AppCtrl', ['$scope', function($scope){
     label: 'EMAIL',
     url: ''
   }];
+
+  $scope.aboutText = {
+    intro: "Hi, I\'m Alfred.",
+    body: "I\'m a Computer Science major at Northeastern University. I like to do dope shit."
+  };
 }]);
