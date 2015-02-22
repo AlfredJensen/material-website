@@ -24,22 +24,18 @@ app.controller('AppCtrl', ['$scope', function($scope){
   $scope.contactInfos = [{
     id: 'btn-twitter',
     label: 'TWITTER',
-    url: 'https://twitter.com/alfredabab_io',
-    color: '#55ACEE' 
+    url: 'https://twitter.com/alfredabab_io'
   }, {
     id: 'btn-github',
     label: 'GITHUB',
-    url: 'https://github.com/alfred',
-    color: '#000000'
+    url: 'https://github.com/alfred'
   }, {
     id: 'btn-linkedin',
     label: 'LINKEDIN',
-    url: 'https://www.linkedin.com/in/alfredababio/en',
-    color: '#0077B5'
+    url: 'https://www.linkedin.com/in/alfredababio/en'
   }, {
     id: 'btn-email',
     label: 'EMAIL',
-    url: 'mailto:aababio75@gmail.com',
-    color: ''
+    url: ''
   }];
 }]);
