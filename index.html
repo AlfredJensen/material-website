@@ -70,6 +70,13 @@
             to design my own longboard decal!
           </p>
         </md-card-content>
+        
+        <md-card-content id="contact-info" class="card-text">
+          <md-divider></md-divider>
+        <ul layout-fill flex  layout="row" layout-align="space-around center">
+            <md-button id="{{ button.id }}" ng-repeat="button in contactInfos" flex href="{{button.url}}">{{button.label}}</md-button>
+        </ul>
+        </md-card-content>
       </md-card>
     </div>
 

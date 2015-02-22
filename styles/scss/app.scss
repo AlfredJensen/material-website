@@ -73,3 +73,25 @@ body, html {
     margin-top: 0px;
   }
 }
+
+#contact-info { 
+  padding: 0;
+
+  ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    text-align: center;
+  }
+  a {
+    padding: 1em;
+  }
+
+  #btn-twitter {
+    color: #55ACEE;
+  }
+
+  #btn-linkedin {
+    color: #0077B5;
+  }
+}

@@ -36,4 +36,18 @@ body, html {
   .card-text p:first-child {
     margin-top: 0px; }
 
+#contact-info {
+  padding: 0; }
+  #contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+  #contact-info a {
+    padding: 1em; }
+  #contact-info #btn-twitter {
+    color: #55ACEE; }
+  #contact-info #btn-linkedin {
+    color: #0077B5; }
+
 /*# sourceMappingURL=app.css.map */
