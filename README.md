@@ -33,3 +33,4 @@ Abstract away content into controller
 
 Add favicon
 
+Slide down for email link
