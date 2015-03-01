@@ -41,6 +41,6 @@ app.controller('AppCtrl', ['$scope', function($scope){
 
   $scope.aboutText = {
     intro: "Hi, I\'m Alfred.",
-    body: "I\'m a Computer Science major at Northeastern University. I like to do dope shit."
+    body: "I\'m a Computer Science major at Northeastern University. I like to longboard, read comics, and write code. I also like to hang out with my friends. Sometimes I even do those things with my friends. I\'m really like to learn about how things work, but I like sharing what I\'ve learned with others even more. \n\n I have worked as a Software Engineering co-op at Intuit and Cengage Learning. "
   };
 }]);
