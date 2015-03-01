@@ -1,5 +1,5 @@
 body, html {
-  background-color: #ececec; }
+  background-color: #e9eaed; }
 
 .card-text {
   background-color: #FFF;
@@ -31,10 +31,13 @@ body, html {
 .card-text {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px; }
-  .card-text p:last-child {
-    margin-bottom: 0px; }
-  .card-text p:first-child {
-    margin-top: 0px; }
+  .card-text h2 {
+    margin-bottom: 0px;
+    font-weight: normal;
+    color: #2196f3; }
+  .card-text p {
+    margin: 0px;
+    white-space: pre-line; }
 
 #contact-info {
   padding: 0; }
