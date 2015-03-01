@@ -1,6 +1,6 @@
 TODOS
 -----------
-Make contact card
+CHANGE CONTACT CARD TO ICONS NOT TEXT
 
 Make custom directives for the contact card
 ----> Style them myself too apparently wtf
