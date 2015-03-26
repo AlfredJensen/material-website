@@ -77,6 +77,19 @@ body, html {
   }
 }
 
+.card-header {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 34px;
+  margin: 0;
+}
+
+.card-left-image {
+  border-right: 1px solid #EFEFEF;
+  max-height: 220px;
+  width: auto;
+}
+
 #contact-info { 
   padding: 0;
 
@@ -93,9 +106,4 @@ body, html {
   }
 }
 
-.card-header {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
-  font-size: 34px;
-  margin: 0;
-}
+

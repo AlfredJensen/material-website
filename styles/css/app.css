@@ -39,6 +39,17 @@ body, html {
     margin: 0px;
     white-space: pre-line; }
 
+.card-header {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 34px;
+  margin: 0; }
+
+.card-left-image {
+  border-right: 1px solid #EFEFEF;
+  max-height: 220px;
+  width: auto; }
+
 #contact-info {
   padding: 0; }
   #contact-info ul {
@@ -49,11 +60,5 @@ body, html {
   #contact-info a {
     padding: 1em;
     color: #448AFF; }
-
-.card-header {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
-  font-size: 34px;
-  margin: 0; }
 
 /*# sourceMappingURL=app.css.map */

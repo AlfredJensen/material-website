@@ -2,12 +2,20 @@ TODOS
 -----------
 CHANGE CONTACT CARD TO ICONS NOT TEXT
 
+Make into a square of cards or rectangle of cards whatever, just amazing idea.
+
+Also use icons not text motherfucker. Damn.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*****************************************************
+
 Make custom directives for the contact card
-----> Style them myself too apparently wtf
+-- Already styled them, but abstracting them into directives and adding it to angular material is a good idea
 
-MAke icons for hobby card
+******************************************************
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-Make the columns the same height,
+Make icons for hobby card
 
 TYPOGRAPHY
 

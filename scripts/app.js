@@ -10,16 +10,14 @@ app.config(function($mdThemingProvider) {
 
 app.controller('AppCtrl', ['$scope', function($scope){
  
-  $scope.subTitles = [{
-    name : 'Developer',
-    icon : 'keyboard'
-  }, {
-    name : 'Comic Nerd',
-    icon : 'book'
-  }, {
-    name : 'Longboarder',
-    icon : 'helmet'
-  }];
+  $scope.hobbies = [{
+    name: "Longboarder",
+    desc: "I designed my own decal and I am working on my slide steez."
+  },{
+    name: "Comic Reader",
+    desc: "If you want to see what I\'m reading checkout my library",
+    link: ""
+  }]
 
   $scope.contactInfos = [{
     id: 'btn-twitter',
@@ -41,6 +39,6 @@ app.controller('AppCtrl', ['$scope', function($scope){
 
   $scope.aboutText = {
     intro: "Hi, I\'m Alfred.",
-    body: "I\'m a Computer Science major at Northeastern University. I like to longboard, read comics, and write code. I also like to hang out with my friends. Sometimes I even do those things with my friends. I really like to learn about how things work, but I like sharing what I\'ve learned with others even more. \n\n I have worked as a Software Engineering co-op at Intuit and Cengage Learning. "
+    body: "I like to make dope shit. "
   };
 }]);

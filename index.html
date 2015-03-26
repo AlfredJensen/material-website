@@ -28,7 +28,7 @@
 
     <div flex flex-gt-sm="35" layout-align="space-between center">
       <!-- MOBILE -->
-      <md-card hide-gt-sm>
+      <md-card>
         <img class="card-image" src="./images/about-me-holi-2014.jpg"/>
         <md-card-content class="card-text" flex>
           <h2>
@@ -45,49 +45,20 @@
           </ul>
         </md-card-content>
       </md-card>
-
-      <!-- DESKTOP -->
-      <md-card flex hide show-gt-sm>
-        <img class="card-corners" src="./images/about-me-holi-2014.jpg"/>
-      </md-card>
-      <md-card flex hide show-gt-sm>
-        <md-card-content class="card-corners card-text">
-          <h2>
-            {{aboutText.intro}}
-          </h2>
-          <p>
-            {{aboutText.body}}
-          </p>
-        </md-card-content>
-        
-        <md-card-content id="contact-info" class="card-text">
-          <md-divider></md-divider>
-          <ul layout-fill flex  layout="row" layout-align="space-around center">
-            <md-button id="{{ button.id }}" ng-repeat="button in contactInfos" flex href="{{button.url}}">{{button.label}}</md-button>
-          </ul>
-        </md-card-content>
-      </md-card>
     </div>
 
     <div flex-gt-sm="35" layout-align="space-between center">
-
-      <md-card flex>
-        <md-content class="card-corners md-padding">
-          <md-list>
-            <md-item ng-repeat="title in subTitles">
-              <md-item-content>
-                <div class="subtitle-wrap">
-                  <span>{{title.name}}</span>
-                </div>
-              </md-item-content>
-              <md-divider ng-if="!$last"></md-divider>
-            </md-item>
-          </md-list>
-        </md-content>
-      </md-card>
       
-      <md-card class="md-whiteframe-z1">
-        <img src="./images/beautiful-longboard.jpg" class="card-corners"/>
+      <md-card layout="row" class="md-whiteframe-z1">
+       
+      <img src="./images/20131025_185252.jpg" class="card-corners card-left-image"/>
+       
+        <md-card-content flex class="card-corners card-text">
+          <div>
+            <h2>{{hobbies[0].name}}</h2>
+            <p>{{hobbies[0].desc}}</p>
+          </div>
+        </md-card-content>
       </md-card> 
 
     </div>
