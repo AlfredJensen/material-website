@@ -39,7 +39,8 @@ body, html {
   margin: 0; }
 
 #about h2 {
-  color: #2196f3; }
+  color: #2196f3;
+  font-weight: normal; }
 
 #contact-info ul {
   padding-left: 0px; }
