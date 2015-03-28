@@ -27,23 +27,16 @@
   <div flex layout="column" layout-gt-sm="row" layout-align-gt-sm="center center">
 
     <div flex flex-gt-sm="35" layout-align="space-between center">
-      <!-- MOBILE -->
-      <md-card>
+      <md-card id="about" class="card-text">
         <img class="card-image" src="./images/about-me-holi-2014.jpg"/>
-        <md-card-content class="card-text" flex>
-          <h2>
-            {{aboutText.intro}}
-          </h2>
-          <p>
-            {{aboutText.body}}
-          </p>
-        </md-card-content>
-        <md-card-content id="contact-info" class="card-text">
-          <md-divider></md-divider>
-          <ul layout-fill flex  layout="row" layout-align="space-around center">
-            <md-button id="{{ button.id }}" ng-repeat="button in contactInfos" flex href="{{button.url}}">{{button.label}}</md-button>
-          </ul>
-        </md-card-content>
+          <md-card-content class="card-text" flex>
+            <h2 class="md-title">
+              {{aboutText.intro}}
+            </h2>
+            <p class="md-body-1">
+              {{aboutText.body}}
+            </p>
+          </md-card-content>
       </md-card>
     </div>
 
@@ -55,12 +48,18 @@
        
         <md-card-content flex class="card-corners card-text">
           <div>
-            <h2>{{hobbies[0].name}}</h2>
+            <h2 class="md-title">{{hobbies[0].name}}</h2>
             <p>{{hobbies[0].desc}}</p>
           </div>
         </md-card-content>
       </md-card> 
-
+      <md-card>
+        <md-card-content id="contact-info" >
+          <ul layout-fill flex  layout="row" layout-align="space-around center">
+            <md-button id="{{ button.id }}" ng-repeat="button in contactInfos" flex href="{{button.url}}">{{button.label}}</md-button>
+          </ul>
+        </md-card-content>
+      </md-card>
     </div>
   </div>
 </div>

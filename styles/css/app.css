@@ -31,13 +31,6 @@ body, html {
 .card-text {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px; }
-  .card-text h2 {
-    margin-bottom: 0px;
-    font-weight: normal;
-    color: #2196f3; }
-  .card-text p {
-    margin: 0px;
-    white-space: pre-line; }
 
 .card-header {
   font-family: Roboto, sans-serif;
@@ -45,20 +38,12 @@ body, html {
   font-size: 34px;
   margin: 0; }
 
-.card-left-image {
-  border-right: 1px solid #EFEFEF;
-  max-height: 220px;
-  width: auto; }
+#about h2 {
+  color: #2196f3; }
 
-#contact-info {
-  padding: 0; }
-  #contact-info ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center; }
-  #contact-info a {
-    padding: 1em;
-    color: #448AFF; }
+#contact-info ul {
+  padding-left: 0px; }
+#contact-info a {
+  color: #448AFF; }
 
 /*# sourceMappingURL=app.css.map */
