@@ -8,7 +8,7 @@ app.config(function($mdThemingProvider) {
   .accentPalette('amber');
 });
 
-app.controller('AppCtrl', ['$scope', function($scope){
+app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
  
   $scope.hobbies = [{
     name: "Longboarder",
@@ -21,7 +21,7 @@ app.controller('AppCtrl', ['$scope', function($scope){
     name: "Developer",
     desc: "I have been a full-stack web developer and am always trying to learn new technologies that will make my apps",
     link: ""
-  }]
+  }];
 
   $scope.contactInfos = [{
     id: 'btn-twitter',
@@ -45,4 +45,12 @@ app.controller('AppCtrl', ['$scope', function($scope){
     intro: "Hi, I\'m Alfred.",     
     body: "I like to do dope shit."    
   };  
-}]);
+
+  $scope.toggleSideMenu = function() {
+    $mdSidenav('sideNav').toggle()
+    .then(function(){
+
+    });
+  };
+});
+

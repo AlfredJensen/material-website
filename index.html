@@ -17,12 +17,15 @@
   <link rel="stylesheet" type="text/css" href="./styles/css/app.css"/>
 </head>
 <body ng-controller="AppCtrl">
-  <md-toolbar layout="row">
+  <md-toolbar id="titleNav" layout="row">
   <h2 class="md-toolbar-tools" md-scroll-shrink>
-    <span>AA</span><span>Alfred Ababio</span>
+    <span id="sideNavToggle" ng-click="toggleSideMenu()">AA</span><span>Alfred Ababio</span>
   </h2>
 </md-toolbar>
 <div class="container">
+  <md-sidenav id="sideNav" class="md-sidenav-left md-whiteframe-z2" md-component-id="sideNav">
+
+  </md-sidenav>
   <div flex layout="column" layout-gt-sm="row" layout-align-gt-sm="center center">
 
     <div flex flex-gt-sm="35" layout-align="space-between center">

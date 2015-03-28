@@ -38,6 +38,12 @@ body, html {
   font-size: 34px;
   margin: 0; }
 
+#titleNav {
+  z-index: 100; }
+
+#sideNav {
+  top: 65px; }
+
 #about h2 {
   color: #2196f3;
   font-weight: normal; }
