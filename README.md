@@ -1,44 +1,53 @@
+===================================================
+===================================================
+
 TODOS
------------
-CHANGE CONTACT CARD TO ICONS NOT TEXT
 
-Make into a square of cards or rectangle of cards whatever, just amazing idea.
+===================================================
+===================================================
 
-Also use icons not text motherfucker. Damn.
+#Home
+  @Sidenav
+    - Pure CSS Hamburger Menu Icon
 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-*****************************************************
+    - Make links work
 
-Make custom directives for the contact card
--- Already styled them, but abstracting them into directives and adding it to angular material is a good idea
+  - Keyboard asset for Developer
+  - Trinity War asset for Comic Reader
 
-******************************************************
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  - Text for About Me
+  - Text for each hobby
+  - Card header styles to font-weight normal
 
-Make icons for hobby card
+#Favicon
 
-TYPOGRAPHY
+#Projects
+  - Find font that goes over images
+  - Use design sketched out
 
-Navigate FAB
-Starts as normal one with both arrows depending on location
-Can also start as mini
-Changes into mini when touched
+#Library
+  - Everything
 
-Sidenav
+==================================================
+==================================================
 
-Maybe change mobile breakpoint
+Version 2 Additions
 
-Change card colors?
+==================================================
+==================================================
 
-Reconsider dividers in hobbys card
+#Contact Card
+A: Change the contact card into a square of colored cards with the icons for each thing
+B: Long column-width colored cards for contact with alternating icon positions
+C: How it is now, with text links
 
-Change shadow on longboard
+#Email Functionality [Back-end]
+Clicking email opens a new "email card"
 
-Add hamburger menu icon to nav
-Try and get pure CSS one that opens sidenav
+#Refactor
+Abstract away content from main file
+Reorganize files
 
-Abstract away content into controller
+#Build Script
 
-Add favicon
-
-Slide down for email link
+#Tests
