@@ -17,6 +17,10 @@ app.controller('AppCtrl', ['$scope', function($scope){
     name: "Comic Reader",
     desc: "If you want to see what I\'m reading checkout my library",
     link: ""
+  },{
+    name: "Developer",
+    desc: "",
+    link: ""
   }]
 
   $scope.contactInfos = [{
@@ -37,8 +41,8 @@ app.controller('AppCtrl', ['$scope', function($scope){
     url: ''
   }];
 
-  $scope.aboutText = {
-    intro: "Hi, I\'m Alfred.",
-    body: "I like to make dope shit. "
-  };
+  $scope.aboutText = {          
+    intro: "Hi, I\'m Alfred.",     
+    body: "I like to make cool stuff."    
+  };  
 }]);
