@@ -19,7 +19,7 @@ app.controller('AppCtrl', ['$scope', function($scope){
     link: ""
   },{
     name: "Developer",
-    desc: "",
+    desc: "I have been a full-stack web developer and am always trying to learn new technologies that will make my apps",
     link: ""
   }]
 
