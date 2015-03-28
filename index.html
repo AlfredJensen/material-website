@@ -28,7 +28,7 @@
 
     <div flex flex-gt-sm="35" layout-align="space-between center">
       <md-card id="about" class="card-text">
-        <img class="card-image" src="./images/about-me-holi-2014.jpg"/>
+        <img class="card-image" src="./images/me-cutdown.jpg"/>
           <md-card-content class="card-text" flex>
             <h2 class="md-title">
               {{aboutText.intro}}
@@ -40,7 +40,12 @@
       </md-card>
 
       <md-card id="developer">
-
+        <md-card-content flex class="card-corners card-text">
+          <div>
+            <h2 class="md-title">{{hobbies[2].name}}</h2>
+            <p>{{hobbies[2].desc}}</p>
+          </div>
+        </md-card-content>
       </md-card>
     </div>
 
@@ -58,7 +63,12 @@
       </md-card> 
 
       <md-card id="comics" class="card-text">
-
+        <md-card-content class="card-text" flex>
+          <h2 class="md-title">
+            {{hobbies[1].name}}
+          </h2>
+          <p>{{hobbies[1].desc}}</p>
+        </md-card-content>
       </md-card>
       
       <md-card id="contact" class="card-text">

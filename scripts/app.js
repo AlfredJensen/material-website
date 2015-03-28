@@ -43,6 +43,6 @@ app.controller('AppCtrl', ['$scope', function($scope){
 
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
-    body: "I like to make cool stuff."    
+    body: "I like to do dope shit."    
   };  
 }]);
