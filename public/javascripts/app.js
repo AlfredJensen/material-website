@@ -8,6 +8,11 @@ app.config(function($mdThemingProvider) {
   .accentPalette('amber');
 });
 
+app.config(function($interpolateProvider){
+  $interpolateProvider.startSymbol('{[{');
+  $interpolateProvider.endSymbol('}]}');
+});
+
 app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
  
   $scope.hobbies = [{
