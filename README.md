@@ -29,6 +29,19 @@ TODOS
 #Library
   - Everything
 
+#Server Functionality
+  - Express.js serving Angular.js app
+  - Server assets correctly
+  - GOAL: Navigate to Projects and Library
+    - Abstract each of 3 into partials inside container
+
+#Build Script Needs
+  - Watch SCSS and Output CSS
+  - Watch Backend JS and JSHint/Lint restart server on save
+  - Watch Frontend JS and JSHint/Lint
+  - Watch Backend JS and run tests
+  - Watch Frontend JS and run tests
+
 ==================================================
 ==================================================
 
@@ -42,7 +55,7 @@ Bugs
 ==================================================
 ==================================================
 
-Version 2 Additions
+Epics
 
 ==================================================
 ==================================================
