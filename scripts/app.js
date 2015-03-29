@@ -47,10 +47,9 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
   };  
 
   $scope.toggleSideMenu = function() {
+
     $mdSidenav('sideNav').toggle()
-    .then(function(){
-
-    });
+    .then(function(){});
   };
-});
 
+});

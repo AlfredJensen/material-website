@@ -8,16 +8,17 @@ TODOS
 
 #Home
   @Sidenav
-    - Pure CSS Hamburger Menu Icon
-
-    - Make links work
+    - Hamburger Menu Icon
+    - Add Links to @@Projects and @@Library
+    - Animation for Hamburger to Arrow
 
   - Keyboard asset for Developer
-  - Trinity War asset for Comic Reader
+* - Trinity War asset for Comic Reader
 
   - Text for About Me
   - Text for each hobby
-  - Card header styles to font-weight normal
+* - Card header styles to font-weight normal
+* - Add gutter to the bottom of the page
 
 #Favicon
 
@@ -27,6 +28,16 @@ TODOS
 
 #Library
   - Everything
+
+==================================================
+==================================================
+
+Bugs
+
+==================================================
+==================================================
+
+#Text in Contacts cuts off on tablet
 
 ==================================================
 ==================================================
@@ -51,3 +62,4 @@ Reorganize files
 #Build Script
 
 #Tests
+

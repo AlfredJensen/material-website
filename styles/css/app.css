@@ -6,7 +6,8 @@ body, html {
   margin-bottom: 0px; }
 
 .container {
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 8px; }
   @media (min-width: 768px) and (max-width: 991px) {
     .container {
       width: 750px; } }
@@ -46,6 +47,15 @@ body, html {
 
 #about h2 {
   color: #2196f3;
+  font-weight: normal; }
+
+#developer h2 {
+  font-weight: normal; }
+
+#longboard h2 {
+  font-weight: normal; }
+
+#comics h2 {
   font-weight: normal; }
 
 #contact-info ul {

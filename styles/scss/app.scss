@@ -13,6 +13,7 @@ body, html {
 
 .container {
   margin: auto;
+  margin-bottom: 8px;
 
   @media(min-width: $sm-width) and (max-width: $md-width - 1) {
     width: 750px;
@@ -88,8 +89,22 @@ body, html {
   }
 }
 
-#longboard {
+#developer {
+  h2 {
+    font-weight: normal;
+  }
+}
 
+#longboard {
+  h2 {
+    font-weight: normal;
+  }
+}
+
+#comics {
+  h2 {
+    font-weight: normal;
+  }
 }
 
 #contact-info { 
@@ -101,7 +116,4 @@ body, html {
     color: #448AFF;
   }
 }
-
-
-
 
