@@ -1,0 +1,58 @@
+
+<div flex layout="column" layout-gt-sm="row" layout-align-gt-sm="center center">
+
+    <div flex flex-gt-sm="35" layout-align="space-between center">
+      <md-card id="about" class="card-text">
+        <img class="card-image" src="./images/me-cutdown.jpg"/>
+          <md-card-content class="card-text" flex>
+            <h2 class="md-display-1">
+              {{!-- {{aboutText.intro}} --}}
+            </h2>
+            <p class="md-body-1">
+              {{!-- {{aboutText.body}} --}}
+            </p>
+          </md-card-content>
+      </md-card>
+
+      <md-card id="developer">
+        <md-card-content flex class="card-corners card-text">
+          <div>
+            {{!-- <h2 class="md-display-1">{{hobbies[2].name}}</h2> --}}
+            {{!-- <p>{{hobbies[2].desc}}</p> --}}
+          </div>
+        </md-card-content>
+      </md-card>
+    </div>
+
+    <div flex-gt-sm="35" layout-align="space-between center">
+      
+      <md-card id="longboard">
+        <img src="./images/materialLongboardHorizontal.png" class="card-corners card-image"/>
+       
+        <md-card-content flex class="card-corners card-text">
+          <div>
+            {{!-- <h2 class="md-display-1">{{hobbies[0].name}}</h2> --}}
+            {{!-- <p>{{hobbies[0].desc}}</p> --}}
+          </div>
+        </md-card-content>
+      </md-card> 
+
+      <md-card id="comics" class="card-text">
+        <img src="./images/trinity-war-massive.jpg" class="card-corners card-image"/>
+        <md-card-content class="card-text" flex>
+          <h2 class="md-display-1">
+            {{!-- {{hobbies[1].name}} --}}
+          </h2>
+          {{!-- <p>{{hobbies[1].desc}}</p> --}}
+        </md-card-content>
+      </md-card>
+      
+      <md-card id="contact" class="card-text">
+        <md-card-content id="contact-info" >
+          <ul layout-fill flex layout="row" layout-align="space-around center">
+            {{!-- <md-button id="{{ button.id }}" class="md-button" ng-repeat="button in contactInfos" flex href="{{button.url}}">{{button.label}}</md-button> --}}
+          </ul>
+        </md-card-content>
+      </md-card>
+    </div>
+  </div>
