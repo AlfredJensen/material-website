@@ -31,7 +31,7 @@ TODOS
 
 #Server Functionality
 * - Express.js serving Angular.js app
-  - Serve assets correctly
+* - Serve assets correctly
   - GOAL: Navigate to Projects and Library
     - Abstract each of 3 into partials inside container
 
