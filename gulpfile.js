@@ -8,11 +8,11 @@ gulp.task('default', function() {
 
 gulp.task('start', function () {
   nodemon({
-    script: 'bin/www'
-  , ext: 'js hbs'
-  , env: { 'NODE_ENV': 'development' }
-  })
-})
+    script: 'bin/www', 
+    ext: 'js hbs',
+    env: { 'NODE_ENV': 'development' }
+  });
+});
 
 gulp.task('watch', function() {
   // Watch backend js and restart server
@@ -30,6 +30,6 @@ gulp.task('assets', function() {
 gulp.task('deploy', function() {
   nodemon({
     script: 'bin/www'
-    
-  })
+
+  });
 });
