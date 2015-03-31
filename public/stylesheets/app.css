@@ -45,6 +45,13 @@ body, html {
 #sideNav {
   top: 65px; }
 
+#menu-icon {
+  font-size: 10px;
+  max-height: 64px;
+  max-width: 64px; }
+  #menu-icon svg {
+    padding: 1.6em 0.8em 1.6em 1.6em; }
+
 #about h2 {
   color: #2196f3;
   font-weight: normal; }
@@ -62,3 +69,5 @@ body, html {
   padding-left: 0px; }
 #contact-info a {
   color: #448AFF; }
+
+/*# sourceMappingURL=app.css.map */

@@ -82,6 +82,16 @@ body, html {
   top: 65px;
 }
 
+#menu-icon {
+  font-size: 10px;
+  max-height: 64px;
+  max-width: 64px;
+
+  svg {
+    padding: 1.6em 0.8em 1.6em 1.6em;
+  }
+}
+
 #about {
   h2 {
     color: rgb(33, 150, 243);
