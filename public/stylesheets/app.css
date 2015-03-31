@@ -51,6 +51,8 @@ body, html {
   max-width: 64px; }
   #menu-icon svg {
     padding: 1.6em 0.8em 1.6em 1.6em; }
+    #menu-icon svg rect {
+      fill: #E6E8F7; }
 
 #about h2 {
   color: #2196f3;
