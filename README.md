@@ -8,7 +8,7 @@ TODOS
 
 #Home
   @Sidenav
-    - Hamburger Menu Icon
+  * - Hamburger Menu Icon
     - Add Links to @@Projects and @@Library
     - Animation for Hamburger to Arrow
 
