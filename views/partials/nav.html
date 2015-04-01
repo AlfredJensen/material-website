@@ -1,11 +1,10 @@
 <md-toolbar id="titleNav" layout="row">
-  {{> menu-to-arrow }}
+  <div ng-include src="'/views/partials/menu-to-arrow.html'"></div>
   <h2 class="md-toolbar-tools" md-scroll-shrink>Alfred Ababio</h2>
 </md-toolbar>
 
 <md-sidenav id="sideNav" class="md-sidenav-left md-whiteframe-z2" md-component-id="sideNav">
   <md-content>
-    <md-button ng-href="comics">Library</md-button>
-    <md-button ng-href="code">Projects</md-button>
+    
   </md-content>
 </md-sidenav>
