@@ -8,9 +8,10 @@ TODOS
 
 #Home
   @Sidenav
-   - Hamburger Menu Icon
+  * - Hamburger Menu Icon
     - Add Links to @@Projects and @@Library
-    - Animation for Hamburger to Arrow
+    - Style those links ^
+  * - Animation for Hamburger to Arrow
 
   - Keyboard asset for Developer
 * - Trinity War asset for Comic Reader
@@ -36,7 +37,10 @@ TODOS
     - Abstract each of 3 into partials inside container
 
 #Build Script Needs
-  - Watch SCSS and Output CSS
+* - Watch SCSS and Output CSS
+    - Get which file changed and write to stdout
+    - Get system time and write to stdout
+    - Color things that get written to stdout
   - Watch Backend JS and JSHint/Lint 
 * - Watch Backend JS and restart server
   - Watch Backend JS and run tests
