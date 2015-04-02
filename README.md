@@ -12,8 +12,10 @@ TODOS
   * - Add Links to @@Projects and @@Library
     - Style those links ^
   * - Animation for Hamburger to Arrow
+  @Navbar
+    - Make name bigger
 
-  - Keyboard asset for Developer
+  - Use an image of code, Art says he'll blur for me
 * - Trinity War asset for Comic Reader
 
   - Text for About Me
