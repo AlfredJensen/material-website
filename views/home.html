@@ -6,10 +6,10 @@
         <img class="card-image" src="./images/me-cut-down.jpg"/>
           <md-card-content class="card-text" flex>
             <h2 class="md-display-1">
-              {[{aboutText.intro}]}
+              {{aboutText.intro}}
             </h2>
             <p class="md-body-1">
-              {[{aboutText.body}]}
+              {{aboutText.body}}
             </p>
           </md-card-content>
       </md-card>
@@ -17,8 +17,8 @@
       <md-card id="developer">
         <md-card-content flex class="card-corners card-text">
           <div>
-            <h2 class="md-display-1">{[{hobbies[2].name}]}</h2>
-            <p>{[{hobbies[2].desc}]}</p>
+            <h2 class="md-display-1">{{hobbies[2].name}}</h2>
+            <p>{{hobbies[2].desc}}</p>
           </div>
         </md-card-content>
       </md-card>
@@ -31,8 +31,8 @@
        
         <md-card-content flex class="card-corners card-text">
           <div>
-            <h2 class="md-display-1">{[{hobbies[0].name}]}</h2>
-            <p>{[{hobbies[0].desc}]}</p>
+            <h2 class="md-display-1">{{hobbies[0].name}}</h2>
+            <p>{{hobbies[0].desc}}</p>
           </div>
         </md-card-content>
       </md-card> 
@@ -41,16 +41,16 @@
         <img src="./images/trinity-war-massive.jpg" class="card-corners card-image"/>
         <md-card-content class="card-text" flex>
           <h2 class="md-display-1">
-            {[{hobbies[1].name}]}
+            {{hobbies[1].name}}
           </h2>
-          <p>{[{hobbies[1].desc}]}</p>
+          <p>{{hobbies[1].desc}}</p>
         </md-card-content>
       </md-card>
       
       <md-card id="contact" class="card-text">
         <md-card-content id="contact-info" >
           <ul layout-fill flex layout="row" layout-align="space-around center">
-            <md-button id="{[{ button.id }]}" class="md-button" ng-repeat="button in contactInfos" flex href="{[{button.url}]}">{[{button.label}]}</md-button>
+            <md-button id="{{ button.id }}" class="md-button" ng-repeat="button in contactInfos" flex href="{{button.url}}">{{button.label}}</md-button>
           </ul>
         </md-card-content>
       </md-card>

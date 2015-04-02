@@ -8,9 +8,20 @@ app.config(function($mdThemingProvider) {
   .accentPalette('amber');
 });
 
-app.config(function($interpolateProvider){
-  $interpolateProvider.startSymbol('{[{');
-  $interpolateProvider.endSymbol('}]}');
+app.config(function($routeProvider) {
+  $routeProvider
+    .when('/', {
+      templateUrl: '/views/home.html'
+    })
+    .when('/code', {
+      templateUrl: '/views/projects/projects.html'
+    })
+    .when('/comics', {
+      templateUrl: '/views/library/library.html'
+    })
+    .otherwise({
+      redirectTo: '/'
+    });
 });
 
 app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
@@ -46,13 +57,20 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
     url: ''
   }];
 
+  $scope.navLinks = [{
+    name: 'Projects',
+    url: '#code'
+  }, {
+    name: 'Pull List',
+    url: '#comics'
+  }];
+
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
     body: "I like to do dope shit."    
   };  
 
   $scope.toggleSideMenu = function() {
-
     $mdSidenav('sideNav').toggle()
     .then(function(){});
   };
