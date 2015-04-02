@@ -1,5 +1,4 @@
 var express = require('express');
-var hbs = require('express-handlebars');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {

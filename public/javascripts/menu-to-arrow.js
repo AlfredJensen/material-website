@@ -41,17 +41,6 @@ svg.addEventListener('click', function(){
   }
 });
 
-document.getElementById('to-arrow').addEventListener('click', function(){ animateToArrow(); });
-
-document.getElementById('to-menu').addEventListener('click', function(){ animateToMenu(); });
-
-document.getElementById('pause').addEventListener('click', function(){
-  if ( svg.animationsPaused() ) {
-    svg.unpauseAnimations();
-  } else {
-    svg.pauseAnimations();
-  }
-});
 
 function animateToArrow(){
    svg.unpauseAnimations();
