@@ -76,6 +76,16 @@ body, html {
 
 #titleNav {
   z-index: 100;
+
+  a:-webkit-any-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: auto;
+  }
+
+  button.md-button {
+    padding: 0 6px;
+  }
 }
 
 #sideNav {

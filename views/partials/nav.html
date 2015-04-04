@@ -1,13 +1,13 @@
 <md-toolbar id="titleNav" layout="row">
-  <div ng-include src="'/views/partials/menu-to-arrow.html'"></div>
-  <h2 class="md-toolbar-tools" md-scroll-shrink>Alfred Ababio</h2>
+  <md-button><div ng-include src="'/views/partials/menu-to-arrow.html'"></div></md-button>
+  <a href="#/"><h1 class="md-toolbar-tools" md-scroll-shrink>Alfred Ababio</h1></a>
 </md-toolbar>
 
 <md-sidenav id="sideNav" class="md-sidenav-left md-whiteframe-z2" md-component-id="sideNav">
   <md-content>
   <ul>
     <li ng-click="toggleSideMenu()" ng-repeat="navLink in navLinks">
-      <md-button href="{{navLink.url}}">{{navLink.name}}</md-button>
+      <md-button class="md-icon-button" href="{{navLink.url}}">{{navLink.name}}</md-button>
     </li>
   </ul>
   </md-content>
