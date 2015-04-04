@@ -72,7 +72,12 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
 
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
-    body: "I like to do dope shit. The dopest of shit."    
+    body: "I like to do dope shit. The dopest of shit. Yeah nigga dope shit only." + 
+          " Keep it trill for real like 508 all day nigga." +
+          "I like to do dope shit. The dopest of shit. Yeah nigga dope shit only. " + 
+          " Keep it trill for real like 508 all day nigga." + 
+          "I like to do dope shit. The dopest of shit. Yeah nigga dope shit only." + 
+          " Keep it trill for real like 508 all day nigga."    
   };  
 
   $scope.toggleSideMenu = function() {
