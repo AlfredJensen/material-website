@@ -6,16 +6,10 @@
 <md-sidenav id="sideNav" class="md-sidenav-left md-whiteframe-z2" md-component-id="sideNav">
   <md-content>
   <ul>
-    <li ng-click="toggleSideMenu()" ng-repeat="navLink in NavLinks">
-      <md-button href="#{{navLink.url}}">{{navLink.name}}</md-button>
+    <li ng-click="toggleSideMenu()" ng-repeat="navLink in navLinks">
+      <md-button href="{{navLink.url}}">{{navLink.name}}</md-button>
     </li>
   </ul>
-    <md-button href="#code">
-    Code
-    </md-button >
-    <md-button href="#comics">
-    Comics
-    </md-button>
   </md-content>
 </md-sidenav>
 

@@ -28,14 +28,19 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
  
   $scope.hobbies = [{
     name: "Longboarder",
-    desc: "I designed my own decal and I am working on my slide steez."
+    desc: "I learned to ride about a year ago, and now I barely ever walk. " + 
+          "See that image up above this text part of this card? Yeah I designed " +
+          "and painted that on my board."
   },{
     name: "Comic Reader",
-    desc: "If you want to see what I\'m reading checkout my library",
-    link: ""
+    desc: "I\'m a huge DC comics fan.  If you want to see what I\'m reading, " + 
+          " checkout my library.",
+    link: "#comics"
   },{
     name: "Developer",
-    desc: "I have been a full-stack web developer and am always trying to learn new technologies that will make my apps",
+    desc: "I am a full-stack web developer and I love learning about user " +
+          "experience principles and the social psychology that goes along with" +
+          "design." ,
     link: ""
   }];
 
@@ -67,7 +72,7 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
 
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
-    body: "I like to do dope shit."    
+    body: "I like to do dope shit. The dopest of shit."    
   };  
 
   $scope.toggleSideMenu = function() {
