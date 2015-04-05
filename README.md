@@ -12,14 +12,15 @@ TODOS
   * - Add Links to @@Projects and @@Library
     - Style those links ^
   * - Animation for Hamburger to Arrow
-  @Navbar
-    - Make name bigger
-
+  
   - Use an image of code, Art says he'll blur for me
 * - Trinity War asset for Comic Reader
 
   - Text for About Me
-  - Text for each hobby
+  @Text for each hobby
+    - Developer
+  * - Longboarder
+   - Comic Reader
 * - Card header styles to font-weight normal
 * - Add gutter to the bottom of the page
 
@@ -35,8 +36,8 @@ TODOS
 #Server Functionality
 * - Express.js serving Angular.js app
 * - Serve assets correctly
-  - GOAL: Navigate to Projects and Library
-    - Abstract each of 3 into partials inside container
+* - GOAL: Navigate to Projects and Library
+* - Abstract each of 3 into partials inside container
 
 #Build Script Needs
 * - Watch SCSS and Output CSS
@@ -76,10 +77,8 @@ C: How it is now, with text links
 Clicking email opens a new "email card"
 
 #Refactor
-Abstract away content from main file
-Reorganize files
-
-#Build Script
+* Abstract away content from main file
+* Reorganize files
 
 #Tests
 
