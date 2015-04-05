@@ -40,7 +40,7 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
     name: "Developer",
     desc: "I am a full-stack web developer and I love learning about user " +
           "experience principles and the social psychology that goes along with" +
-          "design." ,
+          " design." ,
     link: ""
   }];
 
@@ -72,12 +72,8 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
 
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
-    body: "I like to do dope shit. The dopest of shit. Yeah nigga dope shit only." + 
-          " Keep it trill for real like 508 all day nigga." +
-          "I like to do dope shit. The dopest of shit. Yeah nigga dope shit only. " + 
-          " Keep it trill for real like 508 all day nigga." + 
-          "I like to do dope shit. The dopest of shit. Yeah nigga dope shit only." + 
-          " Keep it trill for real like 508 all day nigga."    
+    body: "I like to do dope things. Sometimes I don\'t do dope things. " + 
+          "I do of course try to focus on the dopeness factor though."
   };  
 
   $scope.toggleSideMenu = function() {
