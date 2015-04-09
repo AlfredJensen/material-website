@@ -20,7 +20,7 @@ TODOS
   @Text for each hobby
     - Developer
   * - Longboarder
-   - Comic Reader
+    - Comic Reader
 * - Card header styles to font-weight normal
 * - Add gutter to the bottom of the page
 

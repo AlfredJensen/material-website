@@ -38,9 +38,9 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
     link: "#comics"
   },{
     name: "Developer",
-    desc: "I am a full-stack web developer and I love learning about user " +
-          "experience principles and the social psychology that goes along with" +
-          " design." ,
+    desc: "I am a full-stack web developer and my interests are learning about user " +
+          "experience principles and the psychology that fuels design. I really like" +
+          " solving problems." ,
     link: ""
   }];
 
@@ -63,17 +63,16 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
   }];
 
   $scope.navLinks = [{
-    name: 'Projects',
+    name: 'Code',
     url: '#code'
   }, {
-    name: 'Pull List',
+    name: 'Comics',
     url: '#comics'
   }];
 
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
-    body: "I like to do dope things. Sometimes I don\'t do dope things. " + 
-          "I do of course try to focus on the dopeness factor though."
+    body: "I like to do dope things. "
   };  
 
   $scope.toggleSideMenu = function() {

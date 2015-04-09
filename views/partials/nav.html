@@ -5,8 +5,8 @@
 
 <md-sidenav id="sideNav" class="md-sidenav-left md-whiteframe-z2" md-component-id="sideNav">
   <md-content>
-  <ul>
-    <li ng-click="toggleSideMenu()" ng-repeat="navLink in navLinks">
+  <ul id="navLinks">
+    <li class="navLink" ng-repeat="navLink in navLinks">
       <md-button class="md-icon-button" href="{{navLink.url}}">{{navLink.name}}</md-button>
     </li>
   </ul>

@@ -49,7 +49,25 @@ body, html {
     padding: 0 6px; }
 
 #sideNav {
-  top: 65px; }
+  top: 64px;
+  overflow-y: hidden; }
+  #sideNav #navLinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    #sideNav #navLinks .navLink {
+      max-height: 48px; }
+      #sideNav #navLinks .navLink a {
+        height: 40px;
+        text-align: left;
+        line-height: 40px;
+        display: table;
+        width: 100%; }
+        #sideNav #navLinks .navLink a span {
+          text-align: left;
+          display: table-cell; }
+    #sideNav #navLinks .navLink > * {
+      display: block; }
 
 #menu-icon-wrapper {
   font-size: 10px;

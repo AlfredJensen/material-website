@@ -89,7 +89,37 @@ body, html {
 }
 
 #sideNav {
-  top: 65px;
+  top: 64px;
+  overflow-y: hidden;
+  // background-color: #efefef;
+
+  #navLinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    .navLink {
+      max-height: 48px;
+      
+      a {
+        height: 40px;
+        text-align: left;
+        line-height: 40px;
+        display:table;
+        width: 100%;
+
+        span {
+          text-align: left;
+          display:table-cell;
+        }
+      }
+
+    }
+
+    .navLink > * {
+      display: block;
+    }
+  } 
 }
 
 #menu-icon-wrapper {
