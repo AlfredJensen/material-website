@@ -8,6 +8,10 @@ app.config(function($mdThemingProvider) {
   .accentPalette('amber');
 });
 
+app.config(function($locationProvider) {
+  $locationProvider.html5Mode(true);
+});
+
 app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
@@ -64,10 +68,10 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
 
   $scope.navLinks = [{
     name: 'Code',
-    url: '#code'
+    url: 'code'
   }, {
     name: 'Comics',
-    url: '#comics'
+    url: 'comics'
   }];
 
   $scope.aboutText = {          
