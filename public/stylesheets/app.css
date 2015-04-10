@@ -53,8 +53,7 @@ body, html {
   overflow-y: hidden; }
   #sideNav #navLinks {
     list-style-type: none;
-    padding: 0;
-    margin: 0; }
+    padding: 0; }
     #sideNav #navLinks .navLink {
       max-height: 48px; }
       #sideNav #navLinks .navLink a {
