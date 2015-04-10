@@ -68,10 +68,12 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
 
   $scope.navLinks = [{
     name: 'Code',
-    url: 'code'
+    url: 'code',
+    icon: ''
   }, {
     name: 'Comics',
-    url: 'comics'
+    url: 'comics',
+    icon: ''
   }];
 
   $scope.aboutText = {          
