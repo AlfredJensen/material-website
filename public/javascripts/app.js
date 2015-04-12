@@ -67,12 +67,20 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
   }];
 
   $scope.navLinks = [{
+    name: 'Home',
+    url: '/',
+    icon: ''
+  },{
     name: 'Code',
     url: 'code',
     icon: ''
   }, {
     name: 'Comics',
     url: 'comics',
+    icon: ''
+  }, {
+    name: 'Resume',
+    url: 'resume',
     icon: ''
   }];
 
