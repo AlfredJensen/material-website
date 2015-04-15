@@ -68,10 +68,12 @@ body, html {
         text-align: left;
         line-height: 40px;
         display: table;
-        width: 100%; }
+        width: 100%;
+        padding: 0; }
         #sideNav #navLinks .navLink a span {
           text-align: left;
-          display: table-cell; }
+          display: table-cell;
+          padding: 0 16px; }
     #sideNav #navLinks .navLink > * {
       display: block; }
 

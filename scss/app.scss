@@ -109,6 +109,7 @@ body, html {
 
     .navLink {
       max-height: 48px;
+
       
       a {
         height: 40px;
@@ -116,10 +117,12 @@ body, html {
         line-height: 40px;
         display:table;
         width: 100%;
+        padding: 0;
 
         span {
           text-align: left;
           display:table-cell;
+          padding: 0 16px;
         }
       }
 
