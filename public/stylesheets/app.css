@@ -32,6 +32,10 @@ body, html {
 .card-text {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px; }
+  .card-text h2 {
+    margin: 8px 0 0 0; }
+  .card-text p {
+    margin: 16px 0 0 0; }
 
 .card-header {
   font-family: Roboto, sans-serif;
