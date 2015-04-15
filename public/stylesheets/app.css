@@ -40,7 +40,10 @@ body, html {
   margin: 0; }
 
 #titleNav {
-  z-index: 100; }
+  z-index: 100;
+  height: 64px;
+  font-size: 24px;
+  line-height: 24px; }
   #titleNav a:-webkit-any-link {
     color: inherit;
     text-decoration: none;
