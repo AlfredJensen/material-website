@@ -66,6 +66,7 @@ body, html {
       #sideNav #navLinks .navLink a {
         height: 40px;
         text-align: left;
+        text-transform: none;
         line-height: 40px;
         display: table;
         width: 100%;
