@@ -15,20 +15,27 @@ app.config(function($locationProvider) {
 app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '/views/home.html'
+      templateUrl: '/views/home.html',
+      title: 'Home'
     })
     .when('/code', {
-      templateUrl: '/views/projects/projects.html'
+      templateUrl: '/views/projects/projects.html',
+      title: 'Code'
     })
     .when('/comics', {
-      templateUrl: '/views/library/library.html'
+      templateUrl: '/views/library/library.html',
+      title: 'Comics'
     })
     .otherwise({
       redirectTo: '/'
     });
 });
 
-app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log){
+app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
+
+  $scope.$on('$routeChangeSuccess', function (event, data) {
+    $scope.pageTitle = data.title;
+  });
  
   $scope.hobbies = [{
     name: "Longboarder",
