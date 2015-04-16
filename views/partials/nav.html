@@ -6,7 +6,7 @@
 <md-sidenav id="sideNav" flex class="md-sidenav-left md-whiteframe-z2" md-component-id="sideNav">
   <md-content>
   <ul id="navLinks">
-    <li class="navLink" ng-repeat="navLink in navLinks">
+    <li class="navLink" ng-repeat="navLink in navLinks" ng-class="{'active': navLink.name === pageTitle}">
       <md-button class="md-icon-button" href="{{navLink.url}}">{{navLink.name}}</md-button>
     </li>
   </ul>

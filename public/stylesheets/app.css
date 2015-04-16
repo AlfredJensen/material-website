@@ -75,6 +75,8 @@ body, html {
           text-align: left;
           display: table-cell;
           padding: 0 16px; }
+    #sideNav #navLinks .navLink.active {
+      background-color: #E1E1E1; }
     #sideNav #navLinks .navLink > * {
       display: block; }
 
