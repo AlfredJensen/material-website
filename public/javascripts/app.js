@@ -98,7 +98,16 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
 
   $scope.toggleSideMenu = function() {
     $mdSidenav('sideNav').toggle()
-    .then(function(){});
+    .then(function(){
+      if ($mdSidenav('sideNav').isOpen()) {
+        var backdropElement = document.getElementsByClassName('md-sidenav-backdrop');
+        if(backdropElement) {
+          backdropElement[0].addEventListener('click', function() {
+            animateToMenu();
+          });
+        }
+      }
+    });
   };
 
 });
