@@ -39,9 +39,10 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
  
   $scope.hobbies = [{
     name: "Longboarder",
-    desc: "I learned to ride about a year ago, and now I barely ever walk. " + 
-          "See that image up above this text part of this card? Yeah I designed " +
-          "and painted that on my board."
+    desc: "I learned to ride about a year ago, and it might have been one of the" +
+          "  best things I\'ve done in awhile. It is a really fun way to get" +
+          " around and an even better way to stay in shape. I also managed to" +
+          " design and paint my own decal onto my board!"
   },{
     name: "Comic Reader",
     desc: "I\'m a huge DC comics fan.  If you want to see what I\'m reading, " + 
