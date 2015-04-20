@@ -45,8 +45,10 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
           " design and paint my own decal onto my board!"
   },{
     name: "Comic Reader",
-    desc: "I\'m a huge DC comics fan.  If you want to see what I\'m reading, " + 
-          " checkout my library.",
+    desc: "I\'m a huge DC comics fan. I can appreciate the amount of work that goes" + 
+          " into building not only a universe, but a multiverse. It is amazing to see how" +
+          " authors will respect the canon decisions that other authors have made and adjust their"
+          " storylines to fit the facts. There are so many moving parts",
     link: "#comics"
   },{
     name: "Developer",
@@ -94,7 +96,7 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
 
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
-    body: "I like to do dope things. "
+    body: "I like to do dope things. I try to "
   };  
 
   $scope.toggleSideMenu = function() {
