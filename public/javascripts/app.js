@@ -20,7 +20,8 @@ app.config(function($routeProvider) {
     })
     .when('/code', {
       templateUrl: '/views/projects/projects.html',
-      title: 'Code'
+      title: 'Code',
+      controller: 
     })
     .when('/comics', {
       templateUrl: '/views/library/library.html',
@@ -46,9 +47,9 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
   },{
     name: "Comic Reader",
     desc: "I\'m a huge DC comics fan. I can appreciate the amount of work that goes" + 
-          " into building not only a universe, but a multiverse. It is amazing to see how" +
-          " authors will respect the canon decisions that other authors have made and adjust their"
-          " storylines to fit the facts. There are so many moving parts",
+          " into building not only a universe, but a multiverse. There are so many moving parts to factor in" +
+          " and its amazing to see how authors can stick to canon, but also continue to innovate " +
+          "the story and present their fans with new ideas every issue.",
     link: "#comics"
   },{
     name: "Developer",
