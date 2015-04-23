@@ -20,8 +20,7 @@ app.config(function($routeProvider) {
     })
     .when('/code', {
       templateUrl: '/views/projects/projects.html',
-      title: 'Code',
-      controller: 
+      title: 'Code'
     })
     .when('/comics', {
       templateUrl: '/views/library/library.html',
