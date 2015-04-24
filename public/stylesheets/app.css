@@ -110,3 +110,6 @@ body, html {
 
 .projects {
   background-color: #FFF; }
+  .projects .card-tile md-card {
+    height: 100%;
+    width: 100%; }

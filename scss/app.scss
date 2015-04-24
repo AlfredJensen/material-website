@@ -189,4 +189,11 @@ body, html {
 
 .projects {
   background-color: #FFF;
+
+  .card-tile {
+    md-card {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
