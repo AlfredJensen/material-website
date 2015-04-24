@@ -188,10 +188,15 @@ body, html {
 }
 
 .projects {
-  background-color: #FFF;
+  // background-color: #FFF;
+
+  .gallery {
+    background-color: #e9eaed;
+  }
 
   .card-tile {
     md-card {
+      
       height: 100%;
       width: 100%;
     }

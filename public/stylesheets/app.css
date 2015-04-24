@@ -108,8 +108,8 @@ body, html {
 #contact-info a {
   color: #448AFF; }
 
-.projects {
-  background-color: #FFF; }
-  .projects .card-tile md-card {
-    height: 100%;
-    width: 100%; }
+.projects .gallery {
+  background-color: #e9eaed; }
+.projects .card-tile md-card {
+  height: 100%;
+  width: 100%; }
