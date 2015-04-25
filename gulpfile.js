@@ -4,7 +4,9 @@ var gulp = require('gulp'),
     nodemon = require('gulp-nodemon'),
     jshint = require('gulp-jshint'),
     sass = require('gulp-sass'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+    concat = require('gulp-concat'),
+    sourceMaps = require('gulp-sourcemaps');
 
 gulp.task('default', function() {
   // place code for your default task here
@@ -28,16 +30,43 @@ gulp.task('sass', function () {
   // process.stdout.write('[INFO] CSS Successfully generated.\n');
 });
 
-gulp.task('watch', function () {
-  gulp.watch('./scss/*.scss', ['sass']);
+var bowerJSFiles = [
+  './public/bower_components/angular/angular.min.js',
+  './public/bower_components/angular-animate/angular-animate.min.js',
+  './public/bower_components/angular-aria/angular-aria.min.js',
+  './public/bower_components/angular-material/angular-material.min.js',
+  './public/bower_components/angular-route/angular-route.min.js',
+  './public/bower_components/hammer/hammer.min.js'
+];
+
+var myJSFiles = [
+  './public/js/app.js',
+  './views/projects/projects.js',
+  './public/js/lazy-javascript.js'
+];
+
+gulp.task('concat', function() {
+  gulp.src(bowerJSFiles)
+    .pipe(sourceMaps.init())
+    .pipe(concat('./bower_components/bower_components.min.js'))
+    .pipe(sourceMaps.write())
+    .pipe(gulp.dest('./public/'));
+
+  gulp.src(myJSFiles)
+    .pipe(sourceMaps.init())
+    .pipe(concat('./js/alfred-material.js'))
+    .pipe(gulp.dest('./public/'));
 });
 
-gulp.task('assets', function() {
-  // Watch frontend js and hint
-  // lint
-  // minify js
-  // watch sass and output css
-  // 
+gulp.task('watch', function () {
+  // Need to add JSLint here
+  gulp.watch('./scss/*.scss', ['sass']);
+
+  gulp.watch(bowerJSFiles.concat(myJSFiles), ['concat'])
+});
+
+gulp.task('minify', function() {
+  // Minify JS, CSS, IMAGES Here
 });
 
 gulp.task('deploy', function() {

@@ -1,0 +1,115 @@
+body, html {
+  background-color: #e9eaed; }
+
+.card-text {
+  background-color: #FFF;
+  margin-bottom: 0px; }
+
+.container {
+  margin: auto;
+  margin-bottom: 8px; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+      width: 750px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px; } }
+
+.subtitle-wrap {
+  margin-top: 7px;
+  margin-bottom: 7px; }
+
+.card-corners {
+  border-radius: 2px; }
+
+.card-image {
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px; }
+
+.card-text {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
+  .card-text h2 {
+    margin: 8px 0 0 0; }
+  .card-text p {
+    margin: 16px 0 0 0; }
+
+.card-header {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 34px;
+  margin: 0; }
+
+#titleNav {
+  z-index: 100;
+  height: 64px;
+  font-size: 24px;
+  line-height: 24px; }
+  #titleNav a:-webkit-any-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: auto; }
+  #titleNav button.md-button {
+    padding: 0 6px; }
+
+#sideNav {
+  top: 64px;
+  overflow-y: hidden; }
+  #sideNav #navLinks {
+    list-style-type: none;
+    padding: 0; }
+    #sideNav #navLinks .navLink {
+      max-height: 48px; }
+      #sideNav #navLinks .navLink a {
+        height: 40px;
+        text-align: left;
+        text-transform: none;
+        line-height: 40px;
+        display: table;
+        width: 100%;
+        padding: 0; }
+        #sideNav #navLinks .navLink a span {
+          text-align: left;
+          display: table-cell;
+          padding: 0 16px; }
+    #sideNav #navLinks .navLink.active {
+      background-color: #E1E1E1; }
+    #sideNav #navLinks .navLink > * {
+      display: block; }
+
+#menu-icon-wrapper {
+  font-size: 10px;
+  max-height: 64px;
+  max-width: 64px; }
+  #menu-icon-wrapper svg {
+    padding: 1.6em 0.8em 1.6em 1.6em;
+    margin-top: 0.5em; }
+    #menu-icon-wrapper svg rect {
+      fill: #E6E8F7; }
+
+#about h2 {
+  color: #2196f3;
+  font-weight: normal; }
+
+#developer h2 {
+  font-weight: normal; }
+
+#longboard h2 {
+  font-weight: normal; }
+
+#comics h2 {
+  font-weight: normal; }
+
+#contact-info ul {
+  padding-left: 0px; }
+#contact-info a {
+  color: #448AFF; }
+
+.projects .gallery {
+  background-color: #e9eaed; }
+.projects .card-tile md-card {
+  height: 100%;
+  width: 100%; }
