@@ -47,14 +47,13 @@ var myJSFiles = [
 
 gulp.task('concat', function() {
   gulp.src(bowerJSFiles)
-    .pipe(sourceMaps.init())
     .pipe(concat('./bower_components/bower_components.min.js'))
-    .pipe(sourceMaps.write())
     .pipe(gulp.dest('./public/'));
 
   gulp.src(myJSFiles)
     .pipe(sourceMaps.init())
     .pipe(concat('./js/alfred-material.js'))
+    .pipe(sourceMaps.write())
     .pipe(gulp.dest('./public/'));
 });
 
