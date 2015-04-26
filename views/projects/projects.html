@@ -4,8 +4,8 @@
     <div class="gallery" layout="column" layout-padding hide show-gt-sm flex-gt-sm="25" flex-gt-md="40">
       <md-grid-list md-cols-gt-sm="1" md-cols-gt-md="2" md-gutter="8px" md-row-height="1:1">
         <md-grid-tile class="card-tile">
-          <div ng-click="setAsActivePreview('mean')" class="thumbnail card-corners">
-              <h1>{{allProjects.mean.name}}</h1>
+          <div ng-click="setAsActivePreview('mdSite')" class="thumbnail card-corners">
+              <h1>{{allProjects.mdSite.name}}</h1>
             </div>
         </md-grid-tile>
         <md-grid-tile class="card-tile">
@@ -14,23 +14,23 @@
           </div>
         </md-grid-tile>
         <md-grid-tile class="card-tile">
-          <div class="thumbnail card-corners">
-              <img ng-src="">
+          <div ng-click="setAsActivePreview('mean')" class="thumbnail card-corners">
+              <h1>{{allProjects.mean.name}}</h1>
             </div>
         </md-grid-tile>
         <md-grid-tile class="card-tile">
-          <div class="thumbnail card-corners">
-              <img ng-src="">
+          <div ng-click="setAsActivePreview('moderator')" class="thumbnail card-corners">
+              <h1>{{allProjects.moderator.name}}</h1>
             </div>
         </md-grid-tile>
         <md-grid-tile class="card-tile">
-          <div class="thumbnail card-corners">
-              <img ng-src="">
+          <div ng-click="setAsActivePreview('oldSite')" class="thumbnail card-corners">
+              <h1>{{allProjects.oldSite.name}}</h1>
             </div>
         </md-grid-tile>
         <md-grid-tile class="card-tile">
-          <div class="thumbnail card-corners">
-              <img ng-src="">
+          <div ng-click="setAsActivePreview('cssLogos')" class="thumbnail card-corners">
+              <h1>{{allProjects.cssLogos.name}}</h1>
             </div>
         </md-grid-tile>
       </md-grid-list>

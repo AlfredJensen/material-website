@@ -1,7 +1,7 @@
 app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
 
   $scope.allProjects = {
-    'md-site': {
+    'mdSite': {
       "name": "Alfred Material",
       "screenshot": '',
       "description": '',
@@ -9,7 +9,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "tech": []
     },
     'ef': {
-      "name": "Turbotax Exemption Check",
+      "name": "TurboTax Exemption Check",
       "screenshot": '',
       "description": '',
       "repository": '',
@@ -22,7 +22,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "repository": '',
       "tech": []
     },
-    'old-site': {
+    'oldSite': {
       "name": "Old Website",
       "screenshot": '',
       "description": '',
@@ -36,7 +36,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "repository": '',
       "tech": []
     },
-    'css-logos': {
+    'cssLogos': {
       "name": "CSS Logos",
       "screenshot": '',
       "description": '',
