@@ -201,6 +201,13 @@ body, html {
       box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
       height: 100%;
       width: 100%;
+
+      img {
+        height: auto;
+        width: 100%;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
     }
   }
 

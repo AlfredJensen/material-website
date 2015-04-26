@@ -1,6 +1,6 @@
 app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
 
-  var allProjects = {
+  $scope.allProjects = {
     'md-site': {
       "name": "Alfred Material",
       "screenshot": '',
@@ -45,10 +45,12 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     }
   };
 
+  $scope.activePreview = $scope.allProjects['mean'];
 
-  $scope.makeActivePreview = function(newActiveName) {
 
+  $scope.setAsActivePreview = function(newActiveId) {
+    $scope.activePreview = $scope.allProjects[newActiveId];
   };
 
-  $scope.activePreview = allProjects['md-site'];
+  
 });
