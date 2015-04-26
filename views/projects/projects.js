@@ -5,43 +5,55 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "name": "Alfred Material",
       "screenshot": '',
       "description": '',
-      "repository": '',
-      "tech": []
+      "repository": 'https://github.com/alfred/material-website',
+      "demoLink": 'http://alfredabab.io',
+      "tech": [],
+      "learned": ''
     },
     'ef': {
       "name": "TurboTax Exemption Check",
       "screenshot": '',
       "description": '',
       "repository": '',
-      "tech": []
+      "demoLink": '',
+      "tech": [],
+      "learned": ''
     },
     'mean': {
       "name": "MEAN Skeleton",
       "screenshot": '',
       "description": '',
-      "repository": '',
-      "tech": []
+      "repository": 'https://github.com/alfred/mean-skeleton',
+      "demoLink": '',
+      "tech": [],
+      "learned": ''
     },
     'oldSite': {
       "name": "Old Website",
       "screenshot": '',
       "description": '',
       "repository": '',
-      "tech": []
+      "demoLink": '',
+      "tech": [],
+      "learned": 'https://github.com/alfred/Website'
     },
     'moderator': {
       "name": "Cengage Moderator",
       "screenshot": '',
       "description": '',
       "repository": '',
-      "tech": []
+      "demoLink": '',
+      "tech": [],
+      "learned": ''
     },
     'cssLogos': {
       "name": "CSS Logos",
       "screenshot": '',
       "description": '',
-      "repository": '',
-      "tech": []
+      "repository": 'https://github.com/alfred/css-logos',
+      "demoLink": '',
+      "tech": [],
+      "learned": ''
     }
   };
 
