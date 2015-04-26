@@ -1,5 +1,6 @@
 body, html {
-  background-color: #e9eaed; }
+  background-color: #e9eaed;
+  height: 100%; }
 
 .card-text {
   background-color: #FFF;
@@ -108,8 +109,12 @@ body, html {
 #contact-info a {
   color: #448AFF; }
 
-.projects .gallery {
-  background-color: #e9eaed; }
-.projects .card-tile md-card {
-  height: 100%;
-  width: 100%; }
+.projects {
+  background-color: #FFF; }
+  .projects .gallery {
+    background-color: #e9eaed; }
+  .projects .card-tile md-card {
+    height: 100%;
+    width: 100%; }
+  .projects .preview {
+    background-color: #FFF; }

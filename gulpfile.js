@@ -25,7 +25,7 @@ gulp.task('sass', function () {
   
   gulp.src('./scss/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./public/stylesheets'));
+    .pipe(gulp.dest('./public/css'));
   
   // process.stdout.write('[INFO] CSS Successfully generated.\n');
 });
@@ -61,7 +61,7 @@ gulp.task('watch', function () {
   // Need to add JSLint here
   gulp.watch('./scss/*.scss', ['sass']);
 
-  gulp.watch(bowerJSFiles.concat(myJSFiles), ['concat'])
+  gulp.watch(bowerJSFiles.concat(myJSFiles), ['concat']);
 });
 
 gulp.task('minify', function() {
