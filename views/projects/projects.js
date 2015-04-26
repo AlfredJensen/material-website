@@ -15,7 +15,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "screenshot": '',
       "description": '',
       "repository": '',
-      "demoLink": '',
+      "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
       "tech": [],
       "learned": ''
     },
