@@ -196,25 +196,18 @@ body, html {
   }
 
   .card-tile {
+    figure {
+      align-items: flex-start;
+    }
 
     .thumb-button {
-      height: 100%;
+      height: 60%;
       width: 100%;
       margin: 0;
       padding: 0;
+      white-space: normal;
     }
-
-    .thumbnail {
-      background-color: #FFF;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
-      height: 100%;
-      width: 100%;
-
-        h1 {
-          margin: 0;
-        }
-      }
-    }
+  }
   
 
   .preview {

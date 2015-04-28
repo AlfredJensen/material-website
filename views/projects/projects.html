@@ -3,47 +3,65 @@
 
     <div class="gallery" layout="column" layout-padding hide show-gt-sm flex-gt-sm="25" flex-gt-md="40">
       <md-grid-list md-cols-gt-sm="1" md-cols-gt-md="2" md-gutter="8px" md-row-height="4:5">
-        <md-grid-tile class="card-tile">
-          <md-button ng-click="setAsActivePreview('mdSite')" class="thumb-button card-corners thumbnail card-corners">
+        <md-grid-tile class="card-tile thumbnail">
+          <div flex>
+          <md-button ng-click="setAsActivePreview('mdSite')" class="thumb-button card-corners">
             <div>
-              <h1>{{allProjects.mdSite.name}}</h1>
+              1
             </div>
           </md-button>
+          <h1>{{allProjects.mdSite.name}}</h1>
+          </div>
         </md-grid-tile>
-        <md-grid-tile class="card-tile">
-          <md-button ng-click="setAsActivePreview('ef')" class="thumb-button card-corners thumbnail card-corners">
+        <md-grid-tile class="card-tile thumbnail">
+          <div flex>
+          <md-button ng-click="setAsActivePreview('ef')" class="thumb-button card-corners">
             <div>
-              <h1>{{allProjects.ef.name}}</h1>
+              2
             </div>
           </md-button>
+          <h1>{{allProjects.ef.name}}</h1>
+          </div>
         </md-grid-tile>
-        <md-grid-tile class="card-tile">
-          <md-button ng-click="setAsActivePreview('mean')" class="thumb-button card-corners thumbnail card-corners">
+        <md-grid-tile class="card-tile thumbnail">
+          <div flex>
+          <md-button ng-click="setAsActivePreview('mean')" class="thumb-button card-corners">
             <div>
-              <h1>{{allProjects.mean.name}}</h1>
+              3
             </div>
           </md-button>
+          <h1>{{allProjects.mean.name}}</h1>
+          </div>
         </md-grid-tile>
-        <md-grid-tile class="card-tile">
-          <md-button ng-click="setAsActivePreview('moderator')" class="thumb-button card-corners thumbnail card-corners">
+        <md-grid-tile class="card-tile thumbnail">
+          <div flex>
+          <md-button ng-click="setAsActivePreview('moderator')" class="thumb-button card-corners">
             <div>
-              <h1>{{allProjects.moderator.name}}</h1>
+              4
             </div>
           </md-button>
+          <h1>{{allProjects.moderator.name}}</h1>
+          </div>
         </md-grid-tile>
-        <md-grid-tile class="card-tile">
-          <md-button ng-click="setAsActivePreview('oldSite')" class="thumb-button card-corners thumbnail card-corners">
+        <md-grid-tile class="card-tile thumbnail">
+          <div flex>
+          <md-button ng-click="setAsActivePreview('oldSite')" class="thumb-button card-corners">
             <div>
-              <h1>{{allProjects.oldSite.name}}</h1>
+              5
             </div>
           </md-button>
+          <h1>{{allProjects.oldSite.name}}</h1>
+          </div>
         </md-grid-tile>
-        <md-grid-tile class="card-tile">
-          <md-button ng-click="setAsActivePreview('cssLogos')" class="thumb-button card-corners thumbnail card-corners">
+        <md-grid-tile class="card-tile thumbnail">
+          <div flex>
+          <md-button ng-click="setAsActivePreview('cssLogos')" class="thumb-button card-corners">
             <div>
-              <h1>{{allProjects.cssLogos.name}}</h1>
+              6
             </div>
           </md-button>
+          <h1>{{allProjects.cssLogos.name}}</h1>
+          </div>
         </md-grid-tile>
       </md-grid-list>
     </div>
