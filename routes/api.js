@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var http = require('http');
+var cheerios = 
 
-// Will get new releases for stories I subscribe to
-router.get('releases', function(req, res, next) {
+// Will scrape motherfuckers.
+router.get('scrape', function(req, res, next) {
 
 });
 
