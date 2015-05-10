@@ -52,9 +52,10 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
     link: "#comics"
   },{
     name: "Developer",
-    desc: "I am a full-stack web developer and my interests are learning about user " +
-          "experience principles and the psychology that fuels design. I really like" +
-          " solving problems." ,
+    desc: "I\'m a full-stack web developer. Javascript is my weapon of choice. " +
+          "I started off building apps with Ruby on Rails and have moved on to" +
+          "really enjoying Node and Express. What you\'re looking at right now was actually built with " +
+          "Node and Express, and a generous amount of Angular. Check out my other work here",
     link: ""
   }];
 

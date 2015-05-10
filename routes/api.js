@@ -27,40 +27,41 @@ router.get('/scrape', function(req, res, next) {
   var url = 'https://pulllist.comixology.com/dc_comics/';
   var issuesSeen = 0;
   var queryString = String(year) + '/' + String(month) + '/30' + String(day) + '?start=' + issuesSeen;
-  var totalIssues = 0, pullList = [];
+  var totalIssues = 0, pullList = []; 
 
-  console.log('About to make the request');
-  request.get(url, function(err, resp, html) {
+  var aThing = request.get(url, function(err, resp, html) {
+    console.log('[INFO] GET: ' + url);
     if (err) {
       console.error('[ERROR] Could not scrape, ' + JSON.stringify(err));
     }
     var $ = cheerio.load(html);
 
-    if ($('#listings').text() === "There are no items for this week.") {
-      totalIssues = -1;
-      console.log('[INFO] No listings on this page, exiting loop with: ' + issuesSeen + ' issues this week.');
-    }
     var totalIssues = parseInt($('#results > div > div:nth-child(2) > strong:nth-child(2)').text());
     var $rows = $('tr');
+
     $rows.each(function(index , element) {
-      title = $(this).find('#synopsis').find('#title').find('a').text();
-      process.stdout.write(title + '\n');
-      imageUrl = $(this).find('#image').find('a > img').attr('src');
-      process.stdout.write(imageUrl + '\n');
+      title = $(this).find('#synopsis > #title > a').text();
+      imageUrl = $(this).find('#image > a > img').attr('src');
 
       if (title && validateImageURL(imageUrl, year)) {
         pullList.push({
           'title' : title,
           'imageUrl' : imageUrl
         });
+        issuesSeen++;
       }
     });
-    issuesSeen += 20;
-      // End the request down here right
-    res.send(pullList);
+    return pullList;
   });
   
+  res.send(aThing);
 });
+// Keep for showing growth.
+// if ($('#listings').text() === "There are no items for this week.") {
+//   totalIssues = -1;
+//   console.log('[INFO] No listings on this page, exiting loop with: ' + issuesSeen + ' issues this week.');
+// }
+
 
 // Route that will function and get all of my relevant titles
 // and save to something at the end
@@ -69,6 +70,6 @@ router.get('52', function(req, res, next) {
 });
 
 function validateImageURL(url, year) {
-  return url.indexOf('/' + year + '/') !== 1;
+  return (url.indexOf('/' + year + '/') !== 1);
 };
 module.exports = router;
