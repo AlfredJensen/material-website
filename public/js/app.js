@@ -97,7 +97,9 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
 
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
-    body: "I like to do dope things. I try to "
+    body: "I\'m a Computer Science student at Northeastern, an amateur pool (pocket billiards) player, " + 
+          "and a firm believer that anyone can learn to do anything by visiting the" +
+          "appropriate subreddit. \n My friends think I\'m a pretty cool guy, though they\'ll deny it after reading this."
   };  
 
   $scope.toggleSideMenu = function() {
