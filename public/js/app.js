@@ -31,7 +31,7 @@ app.config(function($routeProvider) {
     });
 });
 
-app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
+app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log, $location) {
 
   $scope.$on('$routeChangeSuccess', function (event, data) {
     $scope.pageTitle = data.title;
@@ -83,15 +83,15 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
     icon: ''
   },{
     name: 'Code',
-    url: 'code',
+    url: '/code',
     icon: ''
   }, {
     name: 'Comics',
-    url: 'comics',
+    url: '/comics',
     icon: ''
   }, {
     name: 'Resume',
-    url: 'resume',
+    url: '/resume',
     icon: ''
   }];
 
@@ -115,5 +115,9 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log) {
       }
     });
   };
+
+  $scope.navigateTo = function(url) {
+    $location.path(url);
+  }
 
 });

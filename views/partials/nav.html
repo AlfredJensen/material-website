@@ -5,11 +5,13 @@
 
 <md-sidenav id="sideNav" flex class="md-sidenav-left md-whiteframe-z2" md-component-id="sideNav">
   <md-content>
-  <ul id="navLinks">
-    <li class="navLink" ng-repeat="navLink in navLinks" ng-class="{'active': navLink.name === pageTitle}">
-      <md-button class="md-icon-button" href="{{navLink.url}}">{{navLink.name}}</md-button>
-    </li>
-  </ul>
+    <md-list id="navLinks">
+      <md-list-item ng-repeat="navLink in navLinks" ng-click="navigateTo(navLink.url)">
+          <md-icon md-svg-icon="cached"></md-icon>
+          <p class="md-body-2">{{navLink.name}}</p>
+          <md-checkbox class="md-secondary" style="display:none"></md-checkbox>
+      </md-list-item>
+    </md-list>
   </md-content>
 </md-sidenav>
 
