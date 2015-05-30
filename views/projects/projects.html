@@ -1,16 +1,18 @@
 <div class="projects" ng-controller="ProjectsCtrl">
-  <div layout="row">
+  <div layout="column" layout-gt-sm="row">
 
-    <div class="gallery" layout="column" layout-padding hide show-gt-sm flex-gt-sm="25" flex-gt-md="40">
-      <md-grid-list md-cols-gt-sm="1" md-cols-gt-md="2" md-gutter="8px" md-row-height="4:5">
+    <div class="gallery" layout="column" layout-padding flex flex-order="2" flex-order-gt-sm="1" flex-gt-sm="25" flex-gt-md="40">
+      <md-grid-list md-cols="2" md-cols-gt-sm="1" md-cols-gt-md="2" md-gutter="8px" md-row-height="4:5">
         <md-grid-tile class="card-tile thumbnail">
           <div class="proj-wrapper" layout-fill>
-            <div class="proj-img" flex="70"></div>
-            <div class="proj-btns" flex="30">
-              <md-button href="" target="_blank" aria-label="Github">
+            <div class="proj-img" flex>
+              <p class="md-headline">Headline</p>
+            </div>
+            <div class="proj-btns">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
                 <md-icon md-svg-icon="github"></md-icon>
               </md-button>
-              <md-button class="md-icon-button" target="_blank" aria-label="Demo">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
                 <md-icon md-svg-icon="demo"></md-icon>
               </md-button>
 
@@ -19,12 +21,14 @@
         </md-grid-tile>
         <md-grid-tile class="card-tile thumbnail">
           <div class="proj-wrapper" layout-fill>
-            <div class="proj-img" flex="70"></div>
-            <div class="proj-btns" flex="30">
-              <md-button href="" target="_blank" aria-label="Github">
+            <div class="proj-img" flex>
+              <p class="md-headline">Headline</p>
+            </div>
+            <div class="proj-btns">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
                 <md-icon md-svg-icon="github"></md-icon>
               </md-button>
-              <md-button class="md-icon-button" target="_blank" aria-label="Demo">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
                 <md-icon md-svg-icon="demo"></md-icon>
               </md-button>
 
@@ -33,12 +37,14 @@
         </md-grid-tile>
         <md-grid-tile class="card-tile thumbnail">
           <div class="proj-wrapper" layout-fill>
-            <div class="proj-img" flex="70"></div>
-            <div class="proj-btns" flex="30">
-              <md-button href="" target="_blank" aria-label="Github">
+            <div class="proj-img" flex>
+              <p class="md-headline">Headline</p>
+            </div>
+            <div class="proj-btns">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
                 <md-icon md-svg-icon="github"></md-icon>
               </md-button>
-              <md-button class="md-icon-button" target="_blank" aria-label="Demo">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
                 <md-icon md-svg-icon="demo"></md-icon>
               </md-button>
 
@@ -47,12 +53,14 @@
         </md-grid-tile>
         <md-grid-tile class="card-tile thumbnail">
           <div class="proj-wrapper" layout-fill>
-            <div class="proj-img" flex="70"></div>
-            <div class="proj-btns" flex="30">
-              <md-button href="" target="_blank" aria-label="Github">
+            <div class="proj-img" flex>
+              <p class="md-headline">Headline</p>
+            </div>
+            <div class="proj-btns">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
                 <md-icon md-svg-icon="github"></md-icon>
               </md-button>
-              <md-button class="md-icon-button" target="_blank" aria-label="Demo">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
                 <md-icon md-svg-icon="demo"></md-icon>
               </md-button>
 
@@ -61,12 +69,14 @@
         </md-grid-tile>
         <md-grid-tile class="card-tile thumbnail">
           <div class="proj-wrapper" layout-fill>
-            <div class="proj-img" flex="70"></div>
-            <div class="proj-btns" flex="30">
-              <md-button href="" target="_blank" aria-label="Github">
+            <div class="proj-img" flex>
+              <p class="md-headline">Headline</p>
+            </div>
+            <div class="proj-btns">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
                 <md-icon md-svg-icon="github"></md-icon>
               </md-button>
-              <md-button class="md-icon-button" target="_blank" aria-label="Demo">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
                 <md-icon md-svg-icon="demo"></md-icon>
               </md-button>
 
@@ -75,12 +85,14 @@
         </md-grid-tile>
         <md-grid-tile class="grid-tile thumbnail">
           <div class="proj-wrapper" layout-fill>
-            <div class="proj-img" flex="70"></div>
-            <div class="proj-btns" flex="30">
-              <md-button href="" target="_blank" aria-label="Github">
+            <div class="proj-img" flex>
+              <p class="md-headline">Headline</p>
+            </div>
+            <div class="proj-btns">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
                 <md-icon md-svg-icon="github"></md-icon>
               </md-button>
-              <md-button class="md-icon-button" target="_blank" aria-label="Demo">
+              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
                 <md-icon md-svg-icon="demo"></md-icon>
               </md-button>
 
@@ -90,7 +102,7 @@
       </md-grid-list>
     </div>
 
-    <div class="preview" layout="column" flex-gt-sm="75" flex-gt-md="60">
+    <div class="preview" layout="column" flex-order="1" flex-order-gt-sm="2" flex-gt-sm="75" flex-gt-md="60">
       <h1>{{activePreview.name}}</h1>
     </div>
   </div>

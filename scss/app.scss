@@ -207,17 +207,22 @@ body, html {
   }
 
   .proj-wrapper {
-
-    background-color: #FFF;
-    // height: 100%;
-    // width: 100%;
     border: 1px solid #000;
-    .proj-img {
+    overflow: hidden;
 
+    .proj-img {
+      position: relative;
+      background-color: #000;
+      height: 100px;
+
+      p {
+        position: absolute;
+        bottom: 0;
+      }
     }
 
     .proj-btns {
-      
+      background-color: #FFF;
     }
   }
   
