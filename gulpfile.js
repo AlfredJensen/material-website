@@ -42,6 +42,7 @@ var bowerJSFiles = [
 var myJSFiles = [
   './public/js/app.js',
   './views/projects/projects.js',
+  './views/home/home.js',
   './public/js/lazy-javascript.js'
 ];
 
