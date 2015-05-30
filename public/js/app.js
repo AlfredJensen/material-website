@@ -31,6 +31,16 @@ app.config(function($routeProvider) {
     });
 });
 
+app.config(function($mdIconProvider) {
+  $mdIconProvider
+    .icon('demo', 'icons/desktop\ mac.svg')
+    .icon('github', 'icons/github.svg')
+    .icon('comic', 'icons/dashboard.svg')
+    .icon('code','icons/code.svg')
+    .icon('resume','icons/description.svg')
+    .icon('home','icons/home.svg');
+});
+
 app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log, $location) {
 
   $scope.$on('$routeChangeSuccess', function (event, data) {
@@ -80,19 +90,19 @@ app.controller('AppCtrl', function($scope, $timeout, $mdSidenav, $log, $location
   $scope.navLinks = [{
     name: 'Home',
     url: '/',
-    icon: ''
+    icon: 'home'
   },{
     name: 'Code',
     url: '/code',
-    icon: ''
+    icon: 'code'
   }, {
     name: 'Comics',
     url: '/comics',
-    icon: ''
+    icon: 'comic'
   }, {
     name: 'Resume',
     url: '/resume',
-    icon: ''
+    icon: 'resume'
   }];
 
   $scope.aboutText = {          

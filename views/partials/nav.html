@@ -7,7 +7,7 @@
   <md-content>
     <md-list id="navLinks">
       <md-list-item ng-repeat="navLink in navLinks" ng-click="navigateTo(navLink.url)">
-          <md-icon md-svg-icon="cached"></md-icon>
+          <md-icon md-svg-icon="{{navLink.icon}}"></md-icon>
           <p class="md-body-2">{{navLink.name}}</p>
           <md-checkbox class="md-secondary" style="display:none"></md-checkbox>
       </md-list-item>
