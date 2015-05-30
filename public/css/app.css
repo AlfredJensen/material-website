@@ -63,8 +63,6 @@ body, html {
     top: 8px;
     margin: 0;
     padding: 0; }
-    #titleNav button.md-button .md-ripple-container {
-      border-radius: 50%; }
 
 #sideNav {
   top: 64px;
@@ -95,7 +93,9 @@ body, html {
   font-size: 10px;
   line-height: 10px;
   max-height: 48px;
-  max-width: 48px; }
+  max-width: 48px;
+  min-height: 48px;
+  padding: 12px 0px; }
   #menu-icon-wrapper svg rect {
     fill: #E6E8F7; }
 
