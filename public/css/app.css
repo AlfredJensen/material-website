@@ -122,6 +122,9 @@ body, html {
   background-color: #e9eaed; }
   .projects .gallery {
     background-color: #e9eaed; }
+  .projects .proj-wrapper {
+    background-color: #FFF;
+    border: 1px solid #000; }
   .projects .preview {
     background-color: #FFF;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2); }
