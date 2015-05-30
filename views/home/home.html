@@ -8,8 +8,8 @@
             <h2 class="md-display-1">
               {{aboutText.intro}}
             </h2>
-            <p class="md-body-1">
-              {{aboutText.body}}
+            <p class="md-body-1" ng-repeat="p in aboutText.body">
+              {{p}}
             </p>
           </md-card-content>
       </md-card>
@@ -18,7 +18,7 @@
         <md-card-content flex class="card-corners card-text">
           <div>
             <h2 class="md-display-1">{{hobbies[2].name}}</h2>
-            <p>{{hobbies[2].desc}}</p>
+            <p class="md-body-1" ng-repeat="p in hobbies[2].desc">{{p}}</p>
           </div>
         </md-card-content>
       </md-card>
@@ -31,8 +31,7 @@
         <md-card-content flex class="card-corners card-text">
           <div>
             <h2 class="md-display-1">{{hobbies[0].name}}</h2>
-            <p class="md-body-1">I learned to ride about a year ago, it might have been one of the best things I've done in awhile. Its a really fun way to get around and even better way to stay active.</p>
-            <p class="md-body-1">I also managed to design and paint my own decal onto my board</p>
+            <p class="md-body-1" ng-repeat="p in hobbies[0].desc">{{p}}</p>
           </div>
         </md-card-content>
       </md-card> 
@@ -43,10 +42,7 @@
           <h2 class="md-display-1">
             {{hobbies[1].name}}
           </h2>
-          <p class="md-body-1">I'm a huge DC comics fan.</p>
-          <p class="md-body-1">
-            I can appreciate the amount of work that goes into building a multiverse. There are so many moving parts to factor in and it’s amazing to see how authors can continue to innovate the characters and present their fans with new topics to think about every issue.
-          </p>
+          <p class="md-body-1" ng-repeat="p in hobbies[1].desc">{{p}}</p>
         </md-card-content>
       </md-card>
       
