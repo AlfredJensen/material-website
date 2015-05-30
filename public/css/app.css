@@ -128,7 +128,7 @@ body, html {
     .projects .proj-wrapper .proj-img {
       position: relative;
       background-color: #000;
-      height: 100px; }
+      height: -webkit-calc(100% - 51px); }
       .projects .proj-wrapper .proj-img p {
         position: absolute;
         bottom: 0; }
