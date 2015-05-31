@@ -124,6 +124,7 @@ body, html {
     background-color: #e9eaed; }
   .projects .proj-wrapper {
     border: 1px solid #000;
+    height: 100%;
     overflow: hidden; }
     .projects .proj-wrapper .proj-img {
       position: relative;
