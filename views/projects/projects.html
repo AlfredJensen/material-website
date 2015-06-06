@@ -1,109 +1,42 @@
 <div class="projects" ng-controller="ProjectsCtrl">
-  <div layout="column" layout-gt-sm="row">
-
-    <div class="gallery" layout="column" layout-padding flex flex-order="2" flex-order-gt-sm="1" flex-gt-sm="25" flex-gt-md="40">
-      <md-grid-list md-cols="2" md-cols-gt-sm="1" md-cols-gt-md="2" md-gutter="8px" md-row-height="16:12">
-        <md-grid-tile class="card-tile thumbnail">
-          <div class="proj-wrapper" layout-fill>
-            <div class="proj-img">
-              <p class="md-headline">Headline</p>
-            </div>
-            <div class="proj-btns">
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-                <md-icon md-svg-icon="github"></md-icon>
-              </md-button>
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-                <md-icon md-svg-icon="demo"></md-icon>
-              </md-button>
-
-            </div>
-          </div>
-        </md-grid-tile>
-        <md-grid-tile class="card-tile thumbnail">
-          <div class="proj-wrapper" layout-fill>
-            <div class="proj-img">
-              <p class="md-headline">Headline</p>
-            </div>
-            <div class="proj-btns">
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-                <md-icon md-svg-icon="github"></md-icon>
-              </md-button>
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-                <md-icon md-svg-icon="demo"></md-icon>
-              </md-button>
-
-            </div>
-          </div>
-        </md-grid-tile>
-        <md-grid-tile class="card-tile thumbnail">
-          <div class="proj-wrapper" layout-fill>
-            <div class="proj-img">
-              <p class="md-headline">Headline</p>
-            </div>
-            <div class="proj-btns">
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-                <md-icon md-svg-icon="github"></md-icon>
-              </md-button>
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-                <md-icon md-svg-icon="demo"></md-icon>
-              </md-button>
-
-            </div>
-          </div>
-        </md-grid-tile>
-        <md-grid-tile class="card-tile thumbnail">
-          <div class="proj-wrapper" layout-fill>
-            <div class="proj-img">
-              <p class="md-headline">Headline</p>
-            </div>
-            <div class="proj-btns">
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-                <md-icon md-svg-icon="github"></md-icon>
-              </md-button>
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-                <md-icon md-svg-icon="demo"></md-icon>
-              </md-button>
-
-            </div>
-          </div>
-        </md-grid-tile>
-        <md-grid-tile class="card-tile thumbnail">
-          <div class="proj-wrapper" layout-fill>
-            <div class="proj-img">
-              <p class="md-headline">Headline</p>
-            </div>
-            <div class="proj-btns">
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-                <md-icon md-svg-icon="github"></md-icon>
-              </md-button>
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-                <md-icon md-svg-icon="demo"></md-icon>
-              </md-button>
-
-            </div>
-          </div>
-        </md-grid-tile>
-        <md-grid-tile class="grid-tile thumbnail">
-          <div class="proj-wrapper" layout-fill>
-            <div class="proj-img">
-              <p class="md-headline">Headline</p>
-            </div>
-            <div class="proj-btns">
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-                <md-icon md-svg-icon="github"></md-icon>
-              </md-button>
-              <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-                <md-icon md-svg-icon="demo"></md-icon>
-              </md-button>
-
-            </div>
-          </div>
-        </md-grid-tile>
-      </md-grid-list>
+  <div class="container">
+    <div layout="row" layout-align="center center" layout-sm="column">
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
+        I'm above on mobile, and to the left on larger devices.
+      </div>
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
+        I'm below on mobile, and to the right on larger devices.
+      </div>
     </div>
-
-    <div class="preview" layout="column" flex-order="1" flex-order-gt-sm="2" flex-gt-sm="75" flex-gt-md="60">
-      <h1>{{activePreview.name}}</h1>
+    <div layout="row" layout-align="center center" layout-sm="column">
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
+        I'm above on mobile, and to the left on larger devices.
+      </div>
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
+        I'm below on mobile, and to the right on larger devices.
+      </div>
     </div>
+    <div layout="row" layout-align="center center" layout-sm="column">
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
+        I'm above on mobile, and to the left on larger devices.
+      </div>
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
+        I'm below on mobile, and to the right on larger devices.
+      </div>
+    </div>
+    <!-- <div class="proj-wrapper" flex="30" ng-repeat="projs in allProjects" class="project-">
+      <div class="proj-img">
+        <p class="md-headline">Headline</p>
+      </div>
+      <div class="proj-btns">
+        <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
+        <md-tooltip md-direction="top">View source on Github</md-tooltip>
+        <md-icon md-svg-icon="github"></md-icon>
+      </md-button>
+      <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
+        <md-icon md-svg-icon="demo"></md-icon>
+      </md-button>
+      </div>
+    </div> -->
   </div>
 </div>
