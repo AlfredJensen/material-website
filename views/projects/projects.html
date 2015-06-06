@@ -1,8 +1,8 @@
 <div class="projects" ng-controller="ProjectsCtrl">
   <div class="container">
     <div layout="row" layout-align="center center" layout-sm="column">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="proj in allProjects" ng-if="$index < 2">
-        <div class="proj-img">
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="(name, proj) in allProjects" ng-if="$index < 2">
+        <div class="proj-img" proj-img="{{proj.screenshot}}" flex>
           
         </div>
         <div class="proj-btns">
@@ -17,9 +17,9 @@
       </div>
     </div>
     <div layout="row" layout-align="center center" layout-sm="column">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="proj in allProjects" ng-if="$index === 2 || $index === 3 ">
-        <div class="proj-img">
-          
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="(name, proj) in allProjects" ng-if="$index === 2 || $index === 3 ">
+        <div class="proj-img" proj-img="{{proj.screenshot}}">
+
         </div>
         <div class="proj-btns">
           <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
@@ -33,8 +33,8 @@
       </div>
     </div>
     <div layout="row" layout-align="center center" layout-sm="column">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="proj in allProjects" ng-if="$index > 3">
-        <div class="proj-img">
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="(name, proj) in allProjects" ng-if="$index > 3">
+        <div class="proj-img" proj-img="{{proj.screenshot}}">
           
         </div>
         <div class="proj-btns">
@@ -50,12 +50,4 @@
     </div>
     
   </div>
-</div>
-
-
-<div class="proj-wrapper" flex="85" flex-gt-sm="45">
-  <div class="proj-img">
-    <p class="md-headline">Headline</p>
-  </div>
-
 </div>

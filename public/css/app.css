@@ -123,12 +123,10 @@ body, html {
   .projects .container {
     padding-top: 16px; }
   .projects .proj-wrapper {
-    border: 1px solid #000;
     height: 300px;
     margin: 8px 4px 0px; }
     .projects .proj-wrapper .proj-img {
       position: relative;
-      background-color: #000;
       height: -webkit-calc(100% - 51px); }
       .projects .proj-wrapper .proj-img p {
         position: absolute;

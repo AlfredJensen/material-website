@@ -12,7 +12,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'ef': {
       "name": "TurboTax Exemption Check",
-      "screenshot": '',
+      "screenshot": '/imgs/projects/tt-ef.png',
       "description": '',
       "repository": '',
       "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
@@ -21,7 +21,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'mean': {
       "name": "MEAN Skeleton",
-      "screenshot": '',
+      "screenshot": '/imgs/projects/mean-skeleton.png',
       "description": '',
       "repository": 'https://github.com/alfred/mean-skeleton',
       "demoLink": '',
@@ -30,7 +30,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'oldSite': {
       "name": "Old Website",
-      "screenshot": '',
+      "screenshot": '/imgs/projects/old-site.png',
       "description": '',
       "repository": '',
       "demoLink": '',
@@ -39,7 +39,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'moderator': {
       "name": "Cengage Moderator",
-      "screenshot": '',
+      "screenshot": '/imgs/projects/cengage-mod.png',
       "description": '',
       "repository": '',
       "demoLink": '',
@@ -48,7 +48,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'cssLogos': {
       "name": "CSS Logos",
-      "screenshot": '',
+      "screenshot": '/imgs/projects/css-logos.png',
       "description": '',
       "repository": 'https://github.com/alfred/css-logos',
       "demoLink": '',
@@ -65,4 +65,14 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
   };
 
   
+});
+app.directive('projImg', function(){
+    return function(scope, element, attrs){
+        attrs.$observe('projImg', function(value) {
+            element.css({
+                'background-image': 'url(' + value +')',
+                'background-size' : 'cover'
+            });
+        });
+    };
 });
