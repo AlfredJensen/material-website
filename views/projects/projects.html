@@ -1,42 +1,61 @@
 <div class="projects" ng-controller="ProjectsCtrl">
   <div class="container">
     <div layout="row" layout-align="center center" layout-sm="column">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
-        I'm above on mobile, and to the left on larger devices.
-      </div>
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
-        I'm below on mobile, and to the right on larger devices.
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="proj in allProjects" ng-if="$index < 2">
+        <div class="proj-img">
+          
+        </div>
+        <div class="proj-btns">
+          <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
+            <md-tooltip md-direction="top">View source on Github</md-tooltip>
+            <md-icon md-svg-icon="github"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
+            <md-icon md-svg-icon="demo"></md-icon>
+          </md-button>
+        </div>
       </div>
     </div>
     <div layout="row" layout-align="center center" layout-sm="column">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
-        I'm above on mobile, and to the left on larger devices.
-      </div>
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
-        I'm below on mobile, and to the right on larger devices.
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="proj in allProjects" ng-if="$index === 2 || $index === 3 ">
+        <div class="proj-img">
+          
+        </div>
+        <div class="proj-btns">
+          <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
+            <md-tooltip md-direction="top">View source on Github</md-tooltip>
+            <md-icon md-svg-icon="github"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
+            <md-icon md-svg-icon="demo"></md-icon>
+          </md-button>
+        </div>
       </div>
     </div>
     <div layout="row" layout-align="center center" layout-sm="column">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
-        I'm above on mobile, and to the left on larger devices.
-      </div>
-      <div class="proj-wrapper" flex="85" flex-gt-sm="45">
-        I'm below on mobile, and to the right on larger devices.
+      <div class="proj-wrapper" flex="85" flex-gt-sm="45" ng-repeat="proj in allProjects" ng-if="$index > 3">
+        <div class="proj-img">
+          
+        </div>
+        <div class="proj-btns">
+          <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
+            <md-tooltip md-direction="top">View source on Github</md-tooltip>
+            <md-icon md-svg-icon="github"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
+            <md-icon md-svg-icon="demo"></md-icon>
+          </md-button>
+        </div>
       </div>
     </div>
-    <!-- <div class="proj-wrapper" flex="30" ng-repeat="projs in allProjects" class="project-">
-      <div class="proj-img">
-        <p class="md-headline">Headline</p>
-      </div>
-      <div class="proj-btns">
-        <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-        <md-tooltip md-direction="top">View source on Github</md-tooltip>
-        <md-icon md-svg-icon="github"></md-icon>
-      </md-button>
-      <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-        <md-icon md-svg-icon="demo"></md-icon>
-      </md-button>
-      </div>
-    </div> -->
+    
   </div>
+</div>
+
+
+<div class="proj-wrapper" flex="85" flex-gt-sm="45">
+  <div class="proj-img">
+    <p class="md-headline">Headline</p>
+  </div>
+
 </div>
