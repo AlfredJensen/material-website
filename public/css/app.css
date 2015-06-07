@@ -122,6 +122,10 @@ body, html {
   background-color: #e9eaed; }
   .projects .container {
     padding-top: 16px; }
+  @media (min-width: 600px) {
+    .projects .container {
+      padding-top: 32px;
+      padding-bottom: 32px; } }
   .projects .proj-wrapper {
     height: 300px;
     margin: 8px 4px 0px; }

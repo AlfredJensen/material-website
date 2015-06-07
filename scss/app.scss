@@ -206,15 +206,20 @@ body, html {
     padding-top: 16px;
   }
 
+  @media (min-width: 600px) {
+    .container {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
   .proj-wrapper {
-    // border: 1px solid #000;
     height: 300px;
     margin: 8px 4px 0px;
 
     .proj-img {
       position: relative;
       height: -webkit-calc(100% - 51px);
-      // max-width: 100%;
 
       p {
         position: absolute;
