@@ -215,6 +215,8 @@ body, html {
 
   .proj-wrapper {
     height: 300px;
+    border-radius: 2px;
+    overflow: hidden;
     margin: 8px 4px 0px;
 
     .proj-img {
@@ -232,5 +234,6 @@ body, html {
     }
   }
   
+
 
 }

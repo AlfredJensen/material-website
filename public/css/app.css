@@ -128,6 +128,8 @@ body, html {
       padding-bottom: 32px; } }
   .projects .proj-wrapper {
     height: 300px;
+    border-radius: 2px;
+    overflow: hidden;
     margin: 8px 4px 0px; }
     .projects .proj-wrapper .proj-img {
       position: relative;
