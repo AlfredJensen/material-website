@@ -133,7 +133,7 @@ body, html {
     margin: 8px 4px 0px; }
     .projects .proj-wrapper .proj-img {
       position: relative;
-      height: -webkit-calc(100% - 51px); }
+      height: 100%; }
       .projects .proj-wrapper .proj-img p {
         position: absolute;
         bottom: 0; }

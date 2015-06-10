@@ -3,7 +3,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
   $scope.allProjects = {
     'mdSite': {
       "name": "Alfred Material",
-      "screenshot": '',
+      "screenshot": 'md-teal-tri.jpg',
       "description": '',
       "repository": 'https://github.com/alfred/material-website',
       "demoLink": 'http://alfredabab.io',
@@ -19,23 +19,23 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "tech": [],
       "learned": ''
     },
+    'oldSite': {
+      "name": "Old Website",
+      "screenshot": '/imgs/projects/old-site.png',
+      "description": '',
+      "repository": 'https://github.com/alfred/Website',
+      "demoLink": '',
+      "tech": [],
+      "learned": 'https://github.com/alfred/Website'
+    },
     'mean': {
       "name": "MEAN Skeleton",
-      "screenshot": '/imgs/projects/mean-skeleton.png',
+      "screenshot": '/imgs/projects/md-grey-circle.png',
       "description": '',
       "repository": 'https://github.com/alfred/mean-skeleton',
       "demoLink": '',
       "tech": [],
       "learned": ''
-    },
-    'oldSite': {
-      "name": "Old Website",
-      "screenshot": '/imgs/projects/old-site.png',
-      "description": '',
-      "repository": '',
-      "demoLink": '',
-      "tech": [],
-      "learned": 'https://github.com/alfred/Website'
     },
     'moderator': {
       "name": "Cengage Moderator",
@@ -48,7 +48,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'cssLogos': {
       "name": "CSS Logos",
-      "screenshot": '/imgs/projects/css-logos.png',
+      "screenshot": '/imgs/projects/md-orange-pyramids.png',
       "description": '',
       "repository": 'https://github.com/alfred/css-logos',
       "demoLink": '',
@@ -71,8 +71,8 @@ app.directive('projImg', function(){
         attrs.$observe('projImg', function(value) {
             element.css({
                 'background-image': 'url(' + value +')',
-                'background-size' : 'cover',
-                'background-position' : 'center'
+                'background-size' : 'cover'
+                // 'background-position' : 'center'
             });
         });
     };
