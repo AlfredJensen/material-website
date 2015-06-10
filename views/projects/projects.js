@@ -30,7 +30,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'mean': {
       "name": "MEAN Skeleton",
-      "screenshot": '/imgs/projects/md-grey-circle.png',
+      "screenshot": '/imgs/projects/md-orange-pyramids.png',
       "description": '',
       "repository": 'https://github.com/alfred/mean-skeleton',
       "demoLink": '',
@@ -39,7 +39,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'moderator': {
       "name": "Cengage Moderator",
-      "screenshot": '/imgs/projects/cengage-mod.png',
+      "screenshot": '/imgs/projects/md-teal-tri.jpg',
       "description": '',
       "repository": '',
       "demoLink": '',
@@ -48,7 +48,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     },
     'cssLogos': {
       "name": "CSS Logos",
-      "screenshot": '/imgs/projects/md-orange-pyramids.png',
+      "screenshot": '/imgs/projects/md-grey-circle.png',
       "description": '',
       "repository": 'https://github.com/alfred/css-logos',
       "demoLink": '',
