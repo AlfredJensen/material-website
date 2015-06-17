@@ -1,53 +1,26 @@
 <div class="projects" ng-controller="ProjectsCtrl">
-  <div class="container">
-    <div layout-gt-sm="row" layout-align="center center" layout="row">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="40" ng-repeat="(name, proj) in allProjects" ng-if="$index < 2">
-        <div class="proj-img" proj-img="{{proj.screenshot}}">
-        <p>{{proj.name}}</p>
-  <!--         <div class="proj-btns" layout="row" layout-align="center center">
-            <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-              <md-tooltip md-direction="top">View source on Github</md-tooltip>
-              <md-icon md-svg-icon="github"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-              <md-icon md-svg-icon="demo"></md-icon>
-            </md-button>
-          </div> -->
-        </div>
+  <div class="proj-row" layout-gt-sm="row" layout-align="center center" layout="row" layout-sm="column">
+    <div class="proj-wrapper" ng-repeat="(name, proj) in allProjects" ng-if="$index < 2">
+      <div class="proj-img" proj-img="{{proj.screenshot}}">
+        <p class="md-display-1 proj-name">{{proj.name}}</p>
+
       </div>
     </div>
-    <div layout-gt-sm="row" layout-align="center center" layout="row">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="40" ng-repeat="(name, proj) in allProjects" ng-if="$index === 2 || $index === 3 ">
-        <div class="proj-img" proj-img="{{proj.screenshot}}">
-        <p>{{proj.name}}</p>
-  <!--         <div class="proj-btns" layout="row" layout-align="center center">
-            <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-              <md-tooltip md-direction="top">View source on Github</md-tooltip>
-              <md-icon md-svg-icon="github"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-              <md-icon md-svg-icon="demo"></md-icon>
-            </md-button>
-          </div> -->
-        </div>
+  </div>
+  <div class="proj-row" layout-gt-sm="row" layout-align="center center" layout="row" layout-sm="column">
+    <div class="proj-wrapper" ng-repeat="(name, proj) in allProjects" ng-if="$index === 2 || $index === 3 ">
+      <div class="proj-img" proj-img="{{proj.screenshot}}">
+        <p class="md-display-1 proj-name">{{proj.name}}</p>
+
       </div>
     </div>
-    <div layout-gt-sm="row" layout-align="center center" layout="row">
-      <div class="proj-wrapper" flex="85" flex-gt-sm="40" ng-repeat="(name, proj) in allProjects" ng-if="$index > 3">
-        <div class="proj-img" proj-img="{{proj.screenshot}}">
-        <p>{{proj.name}}</p>
-  <!--         <div class="proj-btns" layout="row" layout-align="center center">
-            <md-button class="md-icon-button" href="" target="_blank" aria-label="Github">
-              <md-tooltip md-direction="top">View source on Github</md-tooltip>
-              <md-icon md-svg-icon="github"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" href="" target="_blank" aria-label="Demo">
-              <md-icon md-svg-icon="demo"></md-icon>
-            </md-button>
-          </div> -->
-        </div>
+  </div>
+  <div class="proj-row" layout-gt-sm="row" layout-align="center center" layout="row" layout-sm="column">
+    <div class="proj-wrapper" ng-repeat="(name, proj) in allProjects" ng-if="$index > 3">
+      <div class="proj-img" proj-img="{{proj.screenshot}}">
+        <p class="md-display-1 proj-name">{{proj.name}}</p>
+
       </div>
     </div>
-    
   </div>
 </div>

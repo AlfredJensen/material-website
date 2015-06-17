@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500);
+
 $sm-width: 768px;
 $md-width: 992px;
 $lg-width: 1200px;
@@ -201,20 +203,19 @@ body, html {
 
 .projects {
   background-color: #e9eaed;
-
-  .container {
-    padding-top: 16px;
-  }
+  height: 100%;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 8px;
 
   @media (min-width: 600px) {
-    .container {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 
   .proj-wrapper {
     height: 300px;
+    width: 100%;
     border-radius: 2px;
     overflow: hidden;
     margin: 8px 4px 0px;
@@ -222,10 +223,16 @@ body, html {
     .proj-img {
       position: relative;
       height: 100%;
+      background-size: cover;
+      background-position: 50% 0%;
 
-      p {
+      .proj-name {
         position: absolute;
+        margin: 16px 8px;
         bottom: 0;
+
+        font-family: 'Roboto Mono';
+        color: #FFF;
       }
     }
 
@@ -234,6 +241,9 @@ body, html {
     }
   }
   
+  .proj-row {
+    padding: 0px 8px;
+  }
 
 
 }
