@@ -11,7 +11,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "learned": ''
     },
     'ef': {
-      "name": "TurboTax Exemption Check",
+      "name": "Exemption Check",
       "screenshot": '/imgs/projects/tt-ef.png',
       "description": '',
       "repository": '',

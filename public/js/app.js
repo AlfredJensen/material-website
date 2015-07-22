@@ -39,6 +39,7 @@ app.config(function($mdIconProvider) {
     .icon('code','icons/code.svg')
     .icon('resume','icons/description.svg')
     .icon('home','icons/home.svg');
+    // .icon('info', 'icons/info.svg');
 });
 
 app.controller('AppCtrl', function($scope, $log, $location) {

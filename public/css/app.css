@@ -139,7 +139,8 @@ body, html {
       position: relative;
       height: 100%;
       background-size: cover;
-      background-position: 50% 0%; }
+      background-position: 50% 0%;
+      border-radius: 2px; }
       .projects .proj-wrapper .proj-img .overlay {
         background-color: rgba(0, 0, 0, 0.3);
         width: 100%;
