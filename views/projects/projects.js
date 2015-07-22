@@ -15,6 +15,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "screenshot": '/imgs/projects/tt-ef.png',
       "description": '',
       "repository": '',
+      "info": '',
       "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
       "tech": [],
       "learned": ''
@@ -42,7 +43,8 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "screenshot": '/imgs/projects/md-teal-tri.jpg',
       "description": '',
       "repository": '',
-      "demoLink": '',
+      "info": '',
+      "demoLink": 'http://moderator.cengage.com',
       "tech": [],
       "learned": ''
     },
