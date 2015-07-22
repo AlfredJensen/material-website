@@ -10,15 +10,15 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "tech": [],
       "learned": ''
     },
-    // 'ef': {
-    //   "name": "TurboTax Exemption Check",
-    //   "screenshot": '/imgs/projects/tt-ef.png',
-    //   "description": '',
-    //   "repository": '',
-    //   "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
-    //   "tech": [],
-    //   "learned": ''
-    // },
+    'ef': {
+      "name": "TurboTax Exemption Check",
+      "screenshot": '/imgs/projects/tt-ef.png',
+      "description": '',
+      "repository": '',
+      "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
+      "tech": [],
+      "learned": ''
+    },
     'oldSite': {
       "name": "Old Website",
       "screenshot": '/imgs/projects/old-site.png',
