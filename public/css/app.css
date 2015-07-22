@@ -125,6 +125,11 @@ body, html {
   width: 100%;
   margin-top: 16px;
   margin-bottom: 8px; }
+  @media (min-width: 960px) {
+    .projects {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto; } }
   @media (min-width: 600px) {
     .projects {
       margin-top: 32px;

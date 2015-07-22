@@ -208,6 +208,12 @@ body, html {
   margin-top: 16px;
   margin-bottom: 8px;
 
+  @media (min-width: 960px) {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (min-width: 600px) {
     margin-top: 32px;
     margin-bottom: 32px;
