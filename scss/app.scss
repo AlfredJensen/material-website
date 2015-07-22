@@ -246,6 +246,21 @@ body, html {
     .proj-btns {
       color: #FFF;
       font-size: 48px;
+      height: 48px;
+      float: right;
+      margin-right: 8px;
+      margin-top: 8px;
+
+      .proj-icon-target {
+        display: inline-block;
+        width: 48px;
+        height: 100%;
+      }
+      md-icon {
+        color: inherit;
+        padding: 12px;
+        vertical-align: unset;
+      }
     }
   }
   

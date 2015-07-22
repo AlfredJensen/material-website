@@ -153,6 +153,18 @@ body, html {
         color: #FFF; }
     .projects .proj-wrapper .proj-btns {
       color: #FFF;
-      font-size: 48px; }
+      font-size: 48px;
+      height: 48px;
+      float: right;
+      margin-right: 8px;
+      margin-top: 8px; }
+      .projects .proj-wrapper .proj-btns .proj-icon-target {
+        display: inline-block;
+        width: 48px;
+        height: 100%; }
+      .projects .proj-wrapper .proj-btns md-icon {
+        color: inherit;
+        padding: 12px;
+        vertical-align: unset; }
   .projects .proj-row {
     padding: 0px 8px; }
