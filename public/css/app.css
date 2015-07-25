@@ -149,13 +149,16 @@ body, html {
       .projects .proj-wrapper .proj-img .overlay {
         background-color: rgba(0, 0, 0, 0.3);
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        display: none; }
       .projects .proj-wrapper .proj-img .proj-name {
         position: absolute;
         margin: 16px 8px;
         bottom: 0;
         font-family: 'Roboto Mono';
         color: #FFF; }
+    .projects .proj-wrapper .proj-img:hover .overlay {
+      display: block; }
     .projects .proj-wrapper .proj-btns {
       color: #FFF;
       font-size: 48px;
