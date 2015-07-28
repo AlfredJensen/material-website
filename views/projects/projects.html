@@ -4,12 +4,14 @@
       <div class="proj-img" proj-img="{{proj.screenshot}}">
         <div class="overlay">
           <div class="proj-btns">
-            <div class="proj-icon-target">
+            <md-button class="md-icon-button proj-icon-target" aria-label="{{proj.repository === '' ? 'Click for more info' : 'Check out some code'}}" >
+              <md-tooltip>{{proj.repository === '' ? 'Info' : 'Github'}}</md-tooltip>
               <md-icon md-svg-icon="{{proj.repository === '' ? 'info' : 'github'}}"></md-icon>
-            </div>
-            <div class="proj-icon-target">
+            </md-button>
+            <md-button class="md-icon-button proj-icon-target" aria-label="Go to Demo" >
+              <md-tooltip>Go to Demo</md-tooltip>
               <md-icon md-svg-icon="demo"></md-icon>
-            </div>
+            </md-button>
           </div>
           <p class="md-display-1 proj-name">{{proj.name}}</p>
         </div>
@@ -21,12 +23,14 @@
       <div class="proj-img" proj-img="{{proj.screenshot}}">
         <div class="overlay">
           <div class="proj-btns">
-            <div class="proj-icon-target">
+            <md-button class="md-icon-button proj-icon-target" aria-label="{{proj.repository === '' ? 'Click for more info' : 'Check out some code'}}" >
+              <md-tooltip>{{proj.repository === '' ? 'Info' : 'Github'}}</md-tooltip>
               <md-icon md-svg-icon="{{proj.repository === '' ? 'info' : 'github'}}"></md-icon>
-            </div>
-            <div class="proj-icon-target">
+            </md-button>
+            <md-button class="md-icon-button proj-icon-target" aria-label="Go to Demo" >
+              <md-tooltip>Go to Demo</md-tooltip>
               <md-icon md-svg-icon="demo"></md-icon>
-            </div>
+            </md-button>
           </div>
           <p class="md-display-1 proj-name">{{proj.name}}</p>
         </div>
@@ -38,12 +42,14 @@
       <div class="proj-img" proj-img="{{proj.screenshot}}">
         <div class="overlay">
           <div class="proj-btns">
-            <div class="proj-icon-target">
+            <md-button class="md-icon-button proj-icon-target" aria-label="{{proj.repository === '' ? 'Click for more info' : 'Check out some code'}}">
+              <md-tooltip>{{proj.repository === '' ? 'Info' : 'Github'}}</md-tooltip>
               <md-icon md-svg-icon="{{proj.repository === '' ? 'info' : 'github'}}"></md-icon>
-            </div>
-            <div class="proj-icon-target">
+            </md-button>
+            <md-button class="md-icon-button proj-icon-target" aria-label="Go to Demo">
+              <md-tooltip>Go to Demo</md-tooltip>
               <md-icon md-svg-icon="demo"></md-icon>
-            </div>
+            </md-button>
           </div>
           <p class="md-display-1 proj-name">{{proj.name}}</p>
         </div>

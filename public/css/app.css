@@ -166,15 +166,11 @@ body, html {
       font-size: 48px;
       height: 48px;
       float: right;
-      margin-right: 8px;
-      margin-top: 8px; }
+      margin-right: 8px; }
       .projects .proj-wrapper .proj-btns .proj-icon-target {
         display: inline-block;
-        width: 48px;
-        height: 100%; }
+        width: 48px; }
       .projects .proj-wrapper .proj-btns md-icon {
-        color: inherit;
-        padding: 12px;
-        vertical-align: unset; }
+        color: inherit; }
   .projects .proj-row {
     padding: 0px 8px; }
