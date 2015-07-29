@@ -237,7 +237,7 @@ body, html {
       border-radius: 2px;
 
       .overlay {
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba(0,0,0,0.14);
         width: 100%;
         height: 100%;
         // display: none; Uncomment when done
@@ -270,10 +270,24 @@ body, html {
         display: inline-block;
         width: 48px;
         // height: 100%;
+
+        md-icon {
+          color: inherit;
+        }
+
+        .md-icon-info:hover {
+          color: #82B1FF;
+        }
+
+        .md-icon-github:hover {
+          color: rgba(0,0,0,1);
+        }
+
+        .md-icon-demo:hover {
+          color: #82B1FF;
+        }
       }
-      md-icon {
-        color: inherit;
-      }
+
     }
   }
   
