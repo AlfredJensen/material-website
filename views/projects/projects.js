@@ -1,4 +1,4 @@
-app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
+app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdDialog) {
 
   $scope.allProjects = {
     'mdSite': {
@@ -59,11 +59,16 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
     }
   };
 
-  $scope.activePreview = $scope.allProjects['mean'];
-
-
-  $scope.setAsActivePreview = function(newActiveId) {
-    $scope.activePreview = $scope.allProjects[newActiveId];
+  $scope.openProjectInfo = function(ev, name) {
+    $mdDialog.show(
+      $mdDialog.alert()
+        .parent(angular.element(document.body))
+        .title($scope.allProjects[name]['name'])
+        .content($scope.allProjects[name]['info'])
+        .ariaLabel('Alert Dialog Demo')
+        .ok('Got it!')
+        .targetEvent(ev)
+    );
   };
 
   

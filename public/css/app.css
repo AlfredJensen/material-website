@@ -165,8 +165,7 @@ body, html {
       color: #FFF;
       font-size: 48px;
       height: 48px;
-      float: right;
-      margin-right: 8px; }
+      float: right; }
       .projects .proj-wrapper .proj-btns .proj-icon-target {
         display: inline-block;
         width: 48px; }

@@ -4,10 +4,18 @@
       <div class="proj-img" proj-img="{{proj.screenshot}}">
         <div class="overlay">
           <div class="proj-btns">
-            <md-button class="md-icon-button proj-icon-target {{proj.repository === '' ? 'md-icon-info' : 'md-icon-github'}}" href="{{proj.repository !== '' ? proj.repository : ''}}" aria-label="{{proj.repository === '' ? 'Click for more info' : 'Check out some code'}}" >
-              <md-tooltip>{{proj.repository === '' ? 'Info' : 'Github'}}</md-tooltip>
-              <md-icon md-svg-icon="{{proj.repository === '' ? 'info' : 'github'}}"></md-icon>
+          
+          <!--- NG-IF REPOSITORY SHOW GITHUB -->
+            <md-button ng-if="proj.repository !== ''" class="md-icon-button proj-icon-target md-icon-github" ng-attr-href="{{proj.repository}}" aria-label="Check out some code" >
+              <md-tooltip>Github</md-tooltip>
+              <md-icon md-svg-icon="github"></md-icon>
             </md-button>
+           <!--- NG-IF NO REPO SHOW INFO --> 
+            <md-button ng-if="proj.repository === ''" class="md-icon-button proj-icon-target md-icon-info" href="#" ng-click="openProjectInfo($event, name)">
+              <md-tooltip>Info</md-tooltip>
+              <md-icon md-svg-icon="info"></md-icon>
+            </md-button> 
+
             <md-button class="md-icon-button proj-icon-target md-icon-demo" href="{{proj.demoLink}}" aria-label="Go to Demo" >
               <md-tooltip>Go to Demo</md-tooltip>
               <md-icon md-svg-icon="demo"></md-icon>
@@ -23,10 +31,18 @@
       <div class="proj-img" proj-img="{{proj.screenshot}}">
         <div class="overlay">
           <div class="proj-btns">
-            <md-button class="md-icon-button proj-icon-target {{proj.repository === '' ? 'md-icon-info' : 'md-icon-github'}}" href="{{proj.repository !== '' ? proj.repository : ''}}" aria-label="{{proj.repository === '' ? 'Click for more info' : 'Check out some code'}}" >
-              <md-tooltip>{{proj.repository === '' ? 'Info' : 'Github'}}</md-tooltip>
-              <md-icon md-svg-icon="{{proj.repository === '' ? 'info' : 'github'}}"></md-icon>
+
+          <!--- NG-IF REPOSITORY SHOW GITHUB -->
+            <md-button ng-if="proj.repository !== ''" class="md-icon-button proj-icon-target md-icon-github" ng-attr-href="{{proj.repository}}" aria-label="Check out some code" >
+              <md-tooltip>Github</md-tooltip>
+              <md-icon md-svg-icon="github"></md-icon>
             </md-button>
+           <!--- NG-IF NO REPO SHOW INFO --> 
+            <md-button ng-if="proj.repository === ''" class="md-icon-button proj-icon-target md-icon-info" href="#" ng-click="openProjectInfo($event, name)">
+              <md-tooltip>Info</md-tooltip>
+              <md-icon md-svg-icon="info"></md-icon>
+            </md-button>     
+
             <md-button class="md-icon-button proj-icon-target md-icon-demo" href="{{proj.demoLink}}" aria-label="Go to Demo" >
               <md-tooltip>Go to Demo</md-tooltip>
               <md-icon md-svg-icon="demo"></md-icon>
@@ -42,10 +58,18 @@
       <div class="proj-img" proj-img="{{proj.screenshot}}">
         <div class="overlay">
           <div class="proj-btns">
-            <md-button class="md-icon-button proj-icon-target {{proj.repository === '' ? 'md-icon-info' : 'md-icon-github'}}" href="{{proj.repository !== '' ? proj.repository : ''}}" aria-label="{{proj.repository === '' ? 'Click for more info' : 'Check out some code'}}">
-              <md-tooltip>{{proj.repository === '' ? 'Info' : 'Github'}}</md-tooltip>
-              <md-icon md-svg-icon="{{proj.repository === '' ? 'info' : 'github'}}"></md-icon>
+
+          <!--- NG-IF REPOSITORY SHOW GITHUB -->
+            <md-button ng-if="proj.repository !== ''" class="md-icon-button proj-icon-target md-icon-github" ng-attr-href="{{proj.repository}}" aria-label="Check out some code" >
+              <md-tooltip>Github</md-tooltip>
+              <md-icon md-svg-icon="github"></md-icon>
             </md-button>
+           <!--- NG-IF NO REPO SHOW INFO --> 
+            <md-button ng-if="proj.repository === ''" class="md-icon-button proj-icon-target md-icon-info" href="#" ng-click="openProjectInfo($event, name)">
+              <md-tooltip>Info</md-tooltip>
+              <md-icon md-svg-icon="info"></md-icon>
+            </md-button> 
+
             <md-button class="md-icon-button proj-icon-target md-icon-demo" href="{{proj.demoLink}}" aria-label="Go to Demo">
               <md-tooltip>Go to Demo</md-tooltip>
               <md-icon md-svg-icon="demo"></md-icon>
