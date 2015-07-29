@@ -172,11 +172,11 @@ body, html {
         width: 48px; }
         .projects .proj-wrapper .proj-btns .proj-icon-target md-icon {
           color: inherit; }
-        .projects .proj-wrapper .proj-btns .proj-icon-target .md-icon-info:hover {
+        .projects .proj-wrapper .proj-btns .proj-icon-target.md-icon-info:hover {
           color: #82B1FF; }
-        .projects .proj-wrapper .proj-btns .proj-icon-target .md-icon-github:hover {
+        .projects .proj-wrapper .proj-btns .proj-icon-target.md-icon-github:hover {
           color: black; }
-        .projects .proj-wrapper .proj-btns .proj-icon-target .md-icon-demo:hover {
+        .projects .proj-wrapper .proj-btns .proj-icon-target.md-icon-demo:hover {
           color: #82B1FF; }
   .projects .proj-row {
     padding: 0px 8px; }

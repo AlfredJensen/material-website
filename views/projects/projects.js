@@ -53,7 +53,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log) {
       "screenshot": '/imgs/projects/md-grey-circle.png',
       "description": '',
       "repository": 'https://github.com/alfred/css-logos',
-      "demoLink": '',
+      "demoLink": 'http://alfred.github.io/css-logos/',
       "tech": [],
       "learned": ''
     }

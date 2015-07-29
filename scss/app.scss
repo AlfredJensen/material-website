@@ -275,15 +275,15 @@ body, html {
           color: inherit;
         }
 
-        .md-icon-info:hover {
+        &.md-icon-info:hover {
           color: #82B1FF;
         }
 
-        .md-icon-github:hover {
+        &.md-icon-github:hover {
           color: rgba(0,0,0,1);
         }
 
-        .md-icon-demo:hover {
+        &.md-icon-demo:hover {
           color: #82B1FF;
         }
       }
