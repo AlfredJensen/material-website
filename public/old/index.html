@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<!-- Title -->
+	<title> Alfred Ababio </title>
+
+	<!-- Meta Tags -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Alfred, Ababio, alfredababio, aababio, developer, android, web, techhippy, northeastern, neu, computerscience, cs, ccis, compsci">
+	<meta name="description" content="The virtual home Alfred Ababio. The one place to find out everything you need to know about the guy who just showed up in the top few search results for : \"Alfred Ababio\". I hope you enjoy your stay! ">
+	<meta name="author" content="Alfred Ababio">
+
+	<!-- Import stuff! -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+	<!-- Stylesheets!-->
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.css" />
+	<link rel="stylesheet" href="css/ionicons.css" />
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Noto+Sans|Antic+Slab|Lobster|Kreon:400,700|Open+Sans|Bree+Serif|Oxygen|Lato' type='text/css'>
+	<link rel="stylesheet" href="css/alfredMakesPretty.css" />
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span id="nav-brand">Alfred Ababio</span>
+			</div>
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="nav navbar-nav" id="nav">
+					<li><a href="#header">HOME</a>
+					</li>
+					<li><a href="#about">ABOUT</a>
+					</li>
+					<li><a href="#projects">PROJECTS</a>
+					</li>
+					<li><a href="#contact-me">CONTACT</a>
+					</li>
+					<li onclick="resumeRedirect()"><a href="">RESUME</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+	</nav>
+
+	<!-- ================================================== -->
+
+	<div id="header" class="row">
+		<div class="col-xs-12 banner-text">
+			<span class="banner-title">Hi, I'm A<span style="letter-spacing: 5px">l</span>fred!</span><br/>
+			<span class="banner-subtitle">Developer &middot; Longboarder &middot; Comic Nerd</span>
+		</div>
+	</div>
+	<!-- =============================================== -->
+	<!-- About Me -->
+	<div class="section sect-a">
+		<div class="container">
+			<div class="row" id="about">
+				<div class="col-sm-4">
+					<img class="img-responsive" src="images/about-me-holi-2014.jpg">
+				</div>
+				<p class="headers-text">A Little About Myself</p>
+				<p class="subheadings">I am currently a Computer Science major at Northeastern University. I have experience as a full-stack Web Developer and IT Support Technician.</p><br/>
+
+				<p class="subheadings">Even with all of that, I find time to get away from my computer screen. If I’m not being mesmerized by the adventures of the Justice League, I’m out cruising on my longboard or hanging out with my friends. I only started longboarding recently, but I picked it up quickly and now I rarely ever walk.  I even took the opportunity to design my own longboard decal!</p>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- ================================================== -->
+	<!-- Projects -->
+	<div class="section sect-b">
+		<div class="container">
+			<div class="row" id="projects">
+				<p class="headers-text">Things I've Worked On</p>
+				<div class="parent">
+					<div class="col-sm-3 first-project">
+						<a href="https://github.com/alfred/mean-skeleton"><img id="mean-icon" class="img-responsive" src="images/meanlogo.png"></a>
+						
+						<p class="app-title">MEAN Skeleton <span class="in-dev">(Complete)</span></p>
+
+						<p class="app-desc">A hollow structure for web applications that make use of the MEAN stack (MongoDB, Express, AngularJS, and NodeJS). Comes complete with instructions for those who want to get a web application running without gathering and combining all these tools on their own.
+						</p>
+					</div>
+					<!-- /.col-sm-3 -->
+
+					<div class="col-sm-3 project">
+						<a href="http://alfred.github.io/css-logos/"><img id="css-icon" class="img-responsive"src="images/csslogoslogo.png"></a>
+
+						<p class="app-title">CSS Logos <span class="in-dev">(Continuous Development)</span></p>
+
+						<p class="app-desc">Many popular logos for different tools that I have picked up. I chose to do them in CSS originally because I wanted to put them on this page, but I felt that they needed their own place to live. I will be updating this as I learn new tools to make things with, so make sure to check in frequently.
+						</p>
+					</div>
+
+					<div class="col-sm-3 project">
+						<a href="https://github.com/golf1052/QuotesApp"><img class="app-icon img-responsive"src="http://placekitten.com/401/399"></a>
+						
+						<p class="app-title">QuotesApp <span class="in-dev">(In Development)</span></p>
+
+						<p class="app-desc">Inspired by 403 Willis. Create a personal library of thought-provoking multi-person quotes. Pin your favorites or have a random quotation and have them displayed on an extremely customizable homescreen widget. This was more for practice, but the idea is one very dear to me and my roommates.
+						</p>
+					</div>
+					<!-- /.col-sm-3 -->
+
+					<div class="col-sm-3 project">
+						<img class="app-icon img-responsive"src="http://placekitten.com/g/401/399">
+
+						<p class="app-title">The Pull List <span class="in-dev">(Pre-Development)</span></p>
+
+						<p class="app-desc">An app that allows the user to subscribe to upcoming comic titles and series from many different publishers and will receive a push notification when a new comic is released. Designed for comic readers who aren't always able to check the new releases on Wednesdays. I will create this with the <a href="http://www.comicvine.com/api/"><b>Comic Vine API.</b></a>
+						</p>
+					</div>
+					<!-- /.col-sm-3 -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ================================================== -->
+	<!-- Contact Info -->
+	<div class="section sect-c">
+		<div class="container">
+			<div class="row" id="contact-me"> 
+				<p class="headers-text">Get In Touch</p>
+				<div class="contact-icon">
+					<ul class="contact-list">
+						
+						<a class="contact-link" href="mailto:aababio75@gmail.com">
+							<li class="contact-mount">
+								<p class="contact-icon icon ion-ios7-email"></p>
+							</li>
+						</a>
+						
+						<a class="contact-link" href="https://github.com/alfred">
+							<li class="contact-mount">
+								<p class="contact-icon icon ion-social-github"></p>
+							</li>
+						</a>
+						
+						<a class="contact-link" href="https://www.linkedin.com/profile/view?id=296396647">
+							<li class="contact-mount">
+								<p class="contact-icon icon ion-social-linkedin"></p>
+							</li>
+						</a>
+						
+						<a class="contact-link" href="https://www.facebook.com/alfred.ababio.3">
+							<li class="contact-mount">
+								<p class="contact-icon icon ion-social-facebook"></p>
+							</li>
+						</a>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<!-- Designed by Alfred Ababio. Special Thanks to Bootstrap. -->
+	<!-- JavaScripts! -->
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="javascripts/jquery.singlePageNav.min.js"></script>
+	<script src="javascripts/alfredAddsSomeCode.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

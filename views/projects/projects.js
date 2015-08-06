@@ -15,7 +15,9 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "screenshot": '/imgs/projects/ef.png',
       "description": '',
       "repository": '',
-      "info": '',
+      "info": 'While working on Exemption Check, I was an engineer responsible for implementing cross-browser functionality that would save the customer\'s location in the application flow' + 
+              ', retrieve that data and location on sign-in, and load the customer data back into the application. I also was part of the small team that was tasked with a massive rewrite of the' + 
+              'app when the law changed to support multiple household members on the same exemption form.' ,
       "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
       "tech": [],
       "learned": ''
@@ -25,7 +27,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "screenshot": '/imgs/projects/old-s.png',
       "description": '',
       "repository": 'https://github.com/alfred/Website',
-      "demoLink": '',
+      "demoLink": '/old',
       "tech": [],
       "learned": 'https://github.com/alfred/Website'
     },
