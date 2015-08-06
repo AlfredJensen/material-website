@@ -44,7 +44,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "description": '',
       "repository": '',
       "info": 'While working on Cengage Moderator, I implemented: \n\t User Account Creation/Confirmation \n\t User Authentication \n\t Account Recovery/Forgot Password?' + 
-              '\n\t Favoriting and Voting on Questions \n\t User Profiles \n\t User Roles (Admins, Moderators, Users) \n\t Many Front-end UI features' + 
+              '\n\t Favoriting and Voting on Questions \n\t User Profiles \n\t User Roles/Permissions with CanCan (Admins, Moderators, Users) \n\t Many Front-end UI features' + 
               '\n\n\t I also set up Automated Unit and Integration Testing Frameworks with rSpec \n\t',
       "demoLink": 'http://moderator.cengage.com',
       "tech": [],
