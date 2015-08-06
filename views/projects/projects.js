@@ -12,7 +12,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
     },
     'ef': {
       "name": "Exemption Check",
-      "screenshot": '/imgs/projects/tt-ef.png',
+      "screenshot": '/imgs/projects/ef.png',
       "description": '',
       "repository": '',
       "info": '',
@@ -22,7 +22,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
     },
     'oldSite': {
       "name": "Old Website",
-      "screenshot": '/imgs/projects/old-site.png',
+      "screenshot": '/imgs/projects/old-s.png',
       "description": '',
       "repository": 'https://github.com/alfred/Website',
       "demoLink": '',
@@ -43,7 +43,9 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "screenshot": '/imgs/projects/md-teal-tri.jpg',
       "description": '',
       "repository": '',
-      "info": '',
+      "info": 'While working on Cengage Moderator, I implemented: \n\t User Account Creation/Confirmation \n\t User Authentication \n\t Account Recovery/Forgot Password?' + 
+              '\n\t Favoriting and Voting on Questions \n\t User Profiles \n\t User Roles (Admins, Moderators, Users) \n\t Many Front-end UI features' + 
+              '\n\n\t I also set up Automated Unit and Integration Testing Frameworks with rSpec \n\t',
       "demoLink": 'http://moderator.cengage.com',
       "tech": [],
       "learned": ''
@@ -65,8 +67,8 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
         .parent(angular.element(document.body))
         .title($scope.allProjects[name]['name'])
         .content($scope.allProjects[name]['info'])
-        .ariaLabel('Alert Dialog Demo')
-        .ok('Got it!')
+        .ariaLabel($scope.allProjects[name]['name'] + ' Info')
+        .ok('Impressive!')
         .targetEvent(ev)
     );
   };

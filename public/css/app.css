@@ -142,25 +142,30 @@ body, html {
     width: 100%;
     border-radius: 2px;
     overflow: hidden;
-    margin: 0px 4px 8px; }
+    margin: 0px 4px 8px;
+    /** I should refactor this to mobile-first */
+    /** No seriously, refactor that shit to mobile-first^ */ }
     .projects .proj-wrapper .proj-img {
       position: relative;
       height: 100%;
       background-size: cover;
       background-position: 50% 0%;
       border-radius: 2px; }
-      .projects .proj-wrapper .proj-img .overlay {
-        background-color: rgba(0, 0, 0, 0.14);
-        width: 100%;
-        height: 100%; }
       .projects .proj-wrapper .proj-img .proj-name {
         position: absolute;
         margin: 16px 8px;
         bottom: 0;
         font-family: 'Roboto Mono';
         color: #FFF; }
+      .projects .proj-wrapper .proj-img .overlay {
+        width: 100%;
+        height: 100%; }
     .projects .proj-wrapper .proj-img:hover .overlay {
-      display: block; }
+      display: block;
+      background-color: rgba(0, 0, 0, 0.14); }
+    @media (max-width: 959px) {
+      .projects .proj-wrapper .proj-img:hover {
+        background-color: transparent; } }
     .projects .proj-wrapper .proj-btns {
       color: #FFF;
       font-size: 48px;
