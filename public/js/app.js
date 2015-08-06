@@ -29,7 +29,12 @@ app.config(function($routeProvider) {
     .when('/old', {
       redirectTo: function() {
         window.location = '/old';
-      };
+      }
+    })
+    .when('/mean', {
+      redirectTo: function() {
+        window.location ='/mean';
+      }
     })
     .otherwise({
       redirectTo: '/'

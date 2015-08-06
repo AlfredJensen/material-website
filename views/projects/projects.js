@@ -36,7 +36,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "screenshot": '/imgs/projects/md-orange-pyramids.png',
       "description": '',
       "repository": 'https://github.com/alfred/mean-skeleton',
-      "demoLink": '',
+      "demoLink": '/mean',
       "tech": [],
       "learned": ''
     },
