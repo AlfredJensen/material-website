@@ -5,10 +5,12 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
+var mongoose = require('mongoose');
 
 
 var routes = require('./routes/index');
 var api = require('./routes/api');
+var mean = require('./routes/mean-api');
 
 var app = express();
 
@@ -27,8 +29,12 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname, '/views'));
 
 app.use('/api', api);
+app.use('/mean', mean);
 app.use('/', routes);
 
+// Connect to my database of nice things
+var db = require('./config/db');
+mongoose.connect(db.url);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
