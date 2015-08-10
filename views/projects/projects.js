@@ -15,9 +15,15 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "screenshot": '/imgs/projects/ef.png',
       "description": '',
       "repository": '',
-      "info": 'While working on Exemption Check, I was an engineer responsible for implementing cross-browser functionality that would save the customer\'s location in the application flow' + 
-              ', retrieve that data and location on sign-in, and load the customer data back into the application. I also was part of the small team that was tasked with a massive rewrite of the' + 
-              'app when the law changed to support multiple household members on the same exemption form.' ,
+      "info": ['TurboTax Exemption Check is a tool for customers to find out whether they are exempt from the healthcare penalty for that tax year. ' + 
+                'While working on Exemption Check, I was an engineer responsible for implementing cross-device data persistence. ' + 
+                'This allowed customers to start the application on one device and sign out, and then sign back in on a second device' + 
+                'and complete their application where they left off.',
+               'I was also part of the small team that was tasked with a massive rewrite of the tool once the Affordable Care Act ' + 
+                'law changed to allow one form per household instead of one form per member of the household. This required rapid ' + 
+                'implementation of features and also required that we didn’t break the core functionality as that was still the primary use-case.', 
+               'I was a full-stack engineer, as I worked with the backend services as much as I was doing CSS tweaks on the frontend which' + 
+               ' required comprehensive unit tests for both. During peak times I was also responsible for monitoring our Splunk logs for service outtages and errors.'],
       "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
       "tech": [],
       "learned": ''
@@ -45,9 +51,15 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "screenshot": '/imgs/projects/md-teal-tri.jpg',
       "description": '',
       "repository": '',
-      "info": 'While working on Cengage Moderator, I implemented: \n\t User Account Creation/Confirmation \n\t User Authentication \n\t Account Recovery/Forgot Password?' + 
-              '\n\t Favoriting and Voting on Questions \n\t User Profiles \n\t User Roles/Permissions with CanCan (Admins, Moderators, Users) \n\t Many Front-end UI features' + 
-              '\n\n\t I also set up Automated Unit and Integration Testing Frameworks with rSpec \n\t',
+      "info": ['While working on Cengage Moderator, I was on a small team of engineers who had a lot of freedom over the architecture ' + 
+                'and technology used to create a question and answer application for the company to use to ask questions of the CTO during his office hours.', 
+                'I was responsible for architecting the user model. This means that I implemented user account creation, user sessions and ' + 
+                'account recovery. All of my solutions were created in-house as the popular Ruby gem, “devise” was too heavy for the simplicity of the project. ' + 
+                'A long with user accounts, I also implemented user profiles and access levels for roles. ',
+                'Due to the nature of the application, we had many nested data-models and my team had to teach ' + 
+                'ourselves relational data models. For example, we used many-to-many for users favoriting and voting ' + 
+                'on questions, so that a user could browse their favorite questions. I also set up automated unit and ' + 
+                'integration testing suites and wrote some of the frontend interactions.'],
       "demoLink": 'http://moderator.cengage.com',
       "tech": [],
       "learned": ''
@@ -71,20 +83,17 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       targetEvent: ev,
       template:
             '<md-dialog>' +
-            '<md-toolbar>' + 
+            '  <md-toolbar>' + 
             '   <div class="md-toolbar-tools">' +
-            '     <h2> {{project.name}}</h2>' +
+            '     <h2>{{project.name}}</h2>' +
             '   </div>' +
-            '</md-toolbar>' +
+            '  </md-toolbar>' +
             '  <md-dialog-content>'+
-            '    <p> Ay P 1 </p>' +
-            '  </md-dialog-content>' +
-            '  <md-dialog-content>'+
-            '    <p> Ay P 2 </p>' +
+            '    <p class="intent-p" ng-repeat="p in project.info">{{p}}</p>' +
             '  </md-dialog-content>' +
             '  <div class="md-actions">' +
             '    <md-button ng-click="closeProjectInfo()" class="md-primary">' +
-            '      Close Dialog' +
+            '      Impressive!' +
             '    </md-button>' +
             '  </div>' +
             '</md-dialog>',
@@ -93,14 +102,13 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       locals:  {
         project : thisProject
       },
-      controller: function DialogController($scope, $mdDialog) {
+      controller: function DialogController($scope, $mdDialog, project) {
+        $scope.project = project;
         $scope.closeProjectInfo = function() {
           $mdDialog.hide();
         };
       }
     });
-
-
 
     $mdDialog.show(dialogContent).then(function() {
 
