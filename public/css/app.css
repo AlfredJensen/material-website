@@ -160,9 +160,14 @@ body, html {
       .projects .proj-wrapper .proj-img .overlay {
         width: 100%;
         height: 100%; }
+        .projects .proj-wrapper .proj-img .overlay.ef-overlay {
+          background-color: rgba(0, 0, 0, 0.08); }
     .projects .proj-wrapper .proj-img:hover .overlay {
       display: block;
       background-color: rgba(0, 0, 0, 0.14); }
+    .projects .proj-wrapper .proj-img:hover .overlay.ef-overlay {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.28); }
     @media (max-width: 959px) {
       .projects .proj-wrapper .proj-img:hover {
         background-color: transparent; } }
