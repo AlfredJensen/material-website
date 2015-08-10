@@ -64,17 +64,48 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
   };
 
   $scope.openProjectInfo = function(ev, name) {
-    $mdDialog.show(
-      $mdDialog.alert()
-        .parent(angular.element(document.body))
-        .title($scope.allProjects[name]['name'])
-        .content($scope.allProjects[name]['info'])
-        .ariaLabel($scope.allProjects[name]['name'] + ' Info')
-        .ok('Impressive!')
-        .targetEvent(ev)
-    );
-  };
+    var bodyElement = angular.element(document.body);
+    var thisProject = $scope.allProjects[name];
+    var dialogContent = $mdDialog.alert({
+      parent: bodyElement,
+      targetEvent: ev,
+      template:
+            '<md-dialog>' +
+            '<md-toolbar>' + 
+            '   <div class="md-toolbar-tools">' +
+            '     <h2> {{project.name}}</h2>' +
+            '   </div>' +
+            '</md-toolbar>' +
+            '  <md-dialog-content>'+
+            '    <p> Ay P 1 </p>' +
+            '  </md-dialog-content>' +
+            '  <md-dialog-content>'+
+            '    <p> Ay P 2 </p>' +
+            '  </md-dialog-content>' +
+            '  <div class="md-actions">' +
+            '    <md-button ng-click="closeProjectInfo()" class="md-primary">' +
+            '      Close Dialog' +
+            '    </md-button>' +
+            '  </div>' +
+            '</md-dialog>',
+      clickOutsideToClose: true,
+      escapeToClose: true,
+      locals:  {
+        project : thisProject
+      },
+      controller: function DialogController($scope, $mdDialog) {
+        $scope.closeProjectInfo = function() {
+          $mdDialog.hide();
+        };
+      }
+    });
 
+
+
+    $mdDialog.show(dialogContent).then(function() {
+
+    });
+  };
   
 });
 app.directive('projImg', function(){
