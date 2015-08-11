@@ -16,7 +16,7 @@ app.controller('HomeCtrl', function($scope) {
     desc: ["I\'m a full-stack web developer who happens to write lots of Javascript. ",
           "I started off building apps with Ruby on Rails and have moved on to" +
           " Node and Express. What you\'re looking at right now was actually built with " +
-          "Node and Express, and a generous amount of Angular. Check out my other work here"],
+          "Node and Express, and a generous amount of Angular. Check out my other work <a href=\"/code\">here</a>"],
     link: ""
   }];
 
