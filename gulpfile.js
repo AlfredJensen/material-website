@@ -34,6 +34,7 @@ var bowerJSFiles = [
   './public/bower_components/angular/angular.min.js',
   './public/bower_components/angular-animate/angular-animate.min.js',
   './public/bower_components/angular-aria/angular-aria.min.js',
+  './public/bower_components/angular-sanitize/angular-sanitize.min.js',
   './public/bower_components/angular-material/angular-material.min.js',
   './public/bower_components/angular-route/angular-route.min.js',
   './public/bower_components/hammer/hammer.min.js'

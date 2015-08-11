@@ -1,6 +1,6 @@
 'use strict'
 
-var app = angular.module('alfredMaterial', ['ngMaterial', 'ngRoute', 'ngLoadScript']);
+var app = angular.module('alfredMaterial', ['ngMaterial', 'ngRoute', 'ngLoadScript', 'ngSanitize']);
 
 app.config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')

@@ -1,4 +1,4 @@
-app.controller('HomeCtrl', function($scope) {
+app.controller('HomeCtrl', function($scope, $sce) {
   $scope.hobbies = [{
     name: "Longboarder",
     desc: ["I learned to ride about a year ago, and learning might have been one of the" +
@@ -13,10 +13,10 @@ app.controller('HomeCtrl', function($scope) {
     link: "#comics"
   },{
     name: "Developer",
-    desc: ["I\'m a full-stack web developer who happens to write lots of Javascript. ",
-          "I started off building apps with Ruby on Rails and have moved on to" +
+    desc: $sce.trustAsHtml("I\'m a full-stack web developer who happens to write lots of Javascript. </p>" +
+          "<p>I started off building apps with Ruby on Rails and have moved on to" +
           " Node and Express. What you\'re looking at right now was actually built with " +
-          "Node and Express, and a generous amount of Angular. Check out my other work <a href=\"/code\">here</a>"],
+          "Node and Express, and a generous amount of Angular. Check out my other work <a style=\"text-decoration:none\" href=\"/code\">here</a>"),
     link: ""
   }];
 
@@ -35,7 +35,7 @@ app.controller('HomeCtrl', function($scope) {
   }, {
     id: 'btn-email',
     label: 'EMAIL',
-    url: ''
+    url: 'mailto:aababio75@gmail.com'
   }];
 
   $scope.aboutText = {          

@@ -19,7 +19,7 @@
         <md-card-content flex class="card-corners card-text">
           <div>
             <h2 class="md-display-1">{{hobbies[2].name}}</h2>
-            <p class="md-body-1" ng-repeat="p in hobbies[2].desc">{{p}}</p>
+            <p class="md-body-1" ng-bind-html="hobbies[2].desc"</p>
           </div>
         </md-card-content>
       </md-card>
