@@ -26,6 +26,11 @@ app.config(function($routeProvider) {
       templateUrl: '/views/library/library.html',
       title: 'Comics'
     })
+    .when('/resume', {
+      redirectTo: function() {
+        window.location ='/resume.pdf';
+      }
+    })
     .when('/old', {
       redirectTo: function() {
         window.location = '/old';
