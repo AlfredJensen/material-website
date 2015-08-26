@@ -73,7 +73,7 @@ app.config(function($mdIconProvider) {
 
 app.controller('AppCtrl', function($scope, $log, $location) {
   $scope.$on('$routeChangeSuccess', function(event, data) {
-    $scope.theme=data.theme;
+    $scope.theme = data.theme;
   });
 });
 
