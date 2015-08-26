@@ -2,29 +2,43 @@
 
 var app = angular.module('alfredMaterial', ['ngMaterial', 'ngRoute', 'ngLoadScript', 'ngSanitize']);
 
+
 app.config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-  .primaryPalette('blue')
+  .primaryPalette('blue-grey') // blue-grey, teal
   .accentPalette('amber');
+
+  $mdThemingProvider.theme('code')
+  .primaryPalette('teal')
+  .accentPalette('pink');
+
+  $mdThemingProvider.theme('comics')
+  .primaryPalette('lime')
+  .accentPalette('amber');
+
+  $mdThemingProvider.alwaysWatchTheme(true);
 });
 
 app.config(function($locationProvider) {
   $locationProvider.html5Mode(true);
 });
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $mdThemingProvider) {
   $routeProvider
     .when('/', {
       templateUrl: '/views/home/home.html',
-      title: 'Home'
+      title: 'Home',
+      theme: 'default'
     })
     .when('/code', {
       templateUrl: '/views/projects/projects.html',
-      title: 'Code'
+      title: 'Code',
+      theme: 'code'
     })
     .when('/comics', {
       templateUrl: '/views/library/library.html',
-      title: 'Comics'
+      title: 'Comics',
+      theme: 'comics'
     })
     .when('/resume', {
       redirectTo: function() {
@@ -58,7 +72,9 @@ app.config(function($mdIconProvider) {
 });
 
 app.controller('AppCtrl', function($scope, $log, $location) {
-
+  $scope.$on('$routeChangeSuccess', function(event, data) {
+    $scope.theme=data.theme;
+  });
 });
 
 app.controller('NavCtrl', function($scope, $location, $mdSidenav, $log) {
