@@ -8,9 +8,19 @@ router.get('/', function(req, res, next) {
 
 router.get('/resume', function(req, res, next) {
   var resumePath = '/public/Resume.pdf';
-  fs.readFile(resumePath, function(err, pdf) {
-    res.contentType('application/pdf');
-    res.end(pdf);
+
+  var options = {
+    headers: {
+      'Content-Type' : 'application/pdf'
+    },
+    root: __dirname + '/..',
+    maxAge: 86400000
+  }
+
+  res.sendFile(resumePath, options, function(err) {
+    if (err) {
+      res.redirect('/resume.pdf');
+    }
   });
 });
 
