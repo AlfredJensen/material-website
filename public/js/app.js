@@ -68,10 +68,26 @@ app.config(function($mdIconProvider) {
     .icon('demo', 'icons/desktop\ mac.svg')
     .icon('github', 'icons/github.svg')
     .icon('comic', 'icons/dashboard.svg')
-    .icon('code','icons/code.svg')
-    .icon('resume','icons/description.svg')
-    .icon('home','icons/home.svg')
+    .icon('code', 'icons/code.svg')
+    .icon('resume', 'icons/description.svg')
+    .icon('home', 'icons/home.svg')
     .icon('info', 'icons/info.svg');
+});
+
+app.run(function($http, $templateCache) {
+  var iconUrls = [
+    'icons/desktop\ mac.svg',
+    'icons/github.svg',
+    'icons/dashboard.svg',
+    'icons/code.svg',
+    'icons/description.svg',
+    'icons/home.svg',
+    'icons/info.svg'
+  ];
+
+  angular.forEach(iconUrls, function(url) {
+    $http.get(url, {cache: $templateCache});
+  });
 });
 
 app.controller('AppCtrl', function($scope, $log, $location) {
