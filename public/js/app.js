@@ -28,17 +28,20 @@ app.config(function($routeProvider, $mdThemingProvider) {
     .when('/', {
       templateUrl: '/views/home/home.html',
       title: 'Home',
-      theme: 'default'
+      theme: 'default',
+      iconColor: '#607D8B'
     })
     .when('/code', {
       templateUrl: '/views/projects/projects.html',
       title: 'Code',
-      theme: 'code'
+      theme: 'code',
+      iconColor: '#009688'
     })
     .when('/comics', {
       templateUrl: '/views/library/library.html',
       title: 'Comics',
-      theme: 'comics'
+      theme: 'comics',
+      iconColor: '#CDDC39'
     })
     .when('/resume', {
       redirectTo: function() {
@@ -80,6 +83,7 @@ app.controller('AppCtrl', function($scope, $log, $location) {
 app.controller('NavCtrl', function($scope, $location, $mdSidenav, $log) {
   $scope.$on('$routeChangeSuccess', function (event, data) {
     $scope.pageTitle = data.title;
+    $scope.iconColor = data.iconColor;
   });
 
   $scope.navLinks = [{
