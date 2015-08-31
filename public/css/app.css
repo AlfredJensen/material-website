@@ -102,15 +102,19 @@ body, html {
     fill: #E6E8F7; }
 
 #about h2 {
+  color: #388e3c;
   font-weight: normal; }
 
 #developer h2 {
+  color: #424242;
   font-weight: normal; }
 
 #longboard h2 {
+  color: #8e24aa;
   font-weight: normal; }
 
 #comics h2 {
+  color: #ad1457;
   font-weight: normal; }
 
 #contact-info .md-button {

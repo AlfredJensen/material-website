@@ -5,19 +5,21 @@ var app = angular.module('alfredMaterial', ['ngMaterial', 'ngRoute', 'ngLoadScri
 
 app.config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-  .primaryPalette('red', {
-    'default': '600'
-  }) // purple -> longboard, 
+  .primaryPalette('deep-purple', {
+    'default': '400'
+  })
   .accentPalette('amber');
 
   $mdThemingProvider.theme('code')
   .primaryPalette('cyan', {
     'default' :'700'
-  }) // pink -> MEAN Skeleton,
+  })
   .accentPalette('pink');
 
   $mdThemingProvider.theme('comics')
-  .primaryPalette('indigo') // I like indigo and red
+  .primaryPalette('red', {
+    'default': '600'
+  })
   .accentPalette('amber');
 
   $mdThemingProvider.alwaysWatchTheme(true);
@@ -33,19 +35,19 @@ app.config(function($routeProvider, $mdThemingProvider) {
       templateUrl: '/views/home/home.html',
       title: 'Home',
       theme: 'default',
-      iconColor: '#607D8B'
+      iconColor: '#7E57C2'
     })
     .when('/code', {
       templateUrl: '/views/projects/projects.html',
       title: 'Code',
       theme: 'code',
-      iconColor: '#009688'
+      iconColor: '#0097A7'
     })
     .when('/comics', {
       templateUrl: '/views/library/library.html',
       title: 'Comics',
       theme: 'comics',
-      iconColor: '#CDDC39'
+      iconColor: '#E53935'
     })
     .when('/resume', {
       redirectTo: function() {
