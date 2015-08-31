@@ -75,6 +75,9 @@ gulp.task('deploy', function() {
     script: 'bin/www',
     ext: 'js html',
     tasks: ['sass', 'concat'],
-    env: { 'NODE_ENV': 'production' }
+    env: { 
+      'NODE_ENV': 'production',
+      'PORT' : '80'
+     }
   });
 });
