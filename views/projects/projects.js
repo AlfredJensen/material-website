@@ -3,12 +3,13 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
   $scope.allProjects = {
     'mdSite': {
       "name": "Alfred Material",
-      "screenshot": 'md-teal-tri.jpg',
+      "screenshot": '/imgs/projects/anotherrotated4.jpg', //_MG_2891.CR2 and anotherrotated
       "description": '',
       "repository": 'https://github.com/alfred/material-website',
       "demoLink": 'http://alfredabab.io',
       "tech": [],
-      "learned": ''
+      "learned": '',
+      "darkOverlay": true
     },
     'ef': {
       "name": "Exemption Check",
@@ -26,7 +27,8 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
                ' required comprehensive unit tests for both. During peak times I was also responsible for monitoring our Splunk logs for service outtages and errors.'],
       "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
       "tech": [],
-      "learned": ''
+      "learned": '',
+      "darkOverlay": true
     },
     'oldSite': {
       "name": "Old Website",
