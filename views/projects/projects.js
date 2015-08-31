@@ -3,7 +3,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
   $scope.allProjects = {
     'mdSite': {
       "name": "Alfred Material",
-      "screenshot": '/imgs/projects/anotherrotated4.jpg', //_MG_2891.CR2 and anotherrotated
+      "screenshot": '/imgs/projects/md-site-cover.jpg',
       "description": '',
       "repository": 'https://github.com/alfred/material-website',
       "demoLink": 'http://alfredabab.io',

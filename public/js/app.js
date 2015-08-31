@@ -5,15 +5,19 @@ var app = angular.module('alfredMaterial', ['ngMaterial', 'ngRoute', 'ngLoadScri
 
 app.config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-  .primaryPalette('blue-grey') // blue-grey, teal
+  .primaryPalette('red', {
+    'default': '600'
+  }) // purple -> longboard, 
   .accentPalette('amber');
 
   $mdThemingProvider.theme('code')
-  .primaryPalette('teal')
+  .primaryPalette('cyan', {
+    'default' :'700'
+  }) // pink -> MEAN Skeleton,
   .accentPalette('pink');
 
   $mdThemingProvider.theme('comics')
-  .primaryPalette('lime')
+  .primaryPalette('indigo') // I like indigo and red
   .accentPalette('amber');
 
   $mdThemingProvider.alwaysWatchTheme(true);

@@ -73,6 +73,7 @@ gulp.task('minify', function() {
 gulp.task('deploy', function() {
   nodemon({
     script: 'bin/www'
-
+    ext: 'js hbs',
+    env: { 'NODE_ENV': 'production' }
   });
 });
