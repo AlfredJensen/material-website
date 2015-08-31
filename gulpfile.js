@@ -72,7 +72,7 @@ gulp.task('minify', function() {
 
 gulp.task('deploy', function() {
   nodemon({
-    script: 'bin/www'
+    script: 'bin/www',
     ext: 'js html',
     tasks: ['sass', 'concat']
     env: { 'NODE_ENV': 'production' }
