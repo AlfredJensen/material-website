@@ -45,7 +45,7 @@ app.config(function($routeProvider, $mdThemingProvider) {
     })
     .when('/comics', {
       templateUrl: '/views/library/library.html',
-      title: 'Comics',
+      title: 'Library',
       theme: 'comics',
       iconColor: '#E53935'
     })
@@ -117,7 +117,7 @@ app.controller('NavCtrl', function($scope, $location, $mdSidenav, $log) {
     url: '/code',
     icon: 'code'
   }, {
-    name: 'Comics',
+    name: 'Library',
     url: '/comics',
     icon: 'comic'
   }, {
