@@ -74,7 +74,7 @@ gulp.task('deploy', function() {
   nodemon({
     script: 'bin/www',
     ext: 'js html',
-    tasks: ['sass', 'concat']
+    tasks: ['sass', 'concat'],
     env: { 'NODE_ENV': 'production' }
   });
 });
