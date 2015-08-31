@@ -15,7 +15,7 @@ gulp.task('default', function() {
 gulp.task('start', function () {
   nodemon({
     script: 'bin/www', 
-    ext: 'js hbs',
+    ext: 'js html',
     env: { 'NODE_ENV': 'development' }
   });
 });
@@ -73,7 +73,8 @@ gulp.task('minify', function() {
 gulp.task('deploy', function() {
   nodemon({
     script: 'bin/www'
-    ext: 'js hbs',
+    ext: 'js html',
+    tasks: ['sass', 'concat']
     env: { 'NODE_ENV': 'production' }
   });
 });
