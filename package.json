@@ -13,6 +13,7 @@
     "debug": "~2.1.1",
     "express": "~4.12.2",
     "express-handlebars": "latest",
+    "gulp-imagemin": "^2.3.0",
     "jade": "~1.9.2",
     "mongoose": "^4.1.1",
     "morgan": "~1.5.1",

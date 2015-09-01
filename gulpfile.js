@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     sourceMaps = require('gulp-sourcemaps'),
     ngAnnotate = require('gulp-ng-annotate'),
-    uglify = require('gulp-uglify');  
+    uglify = require('gulp-uglify'),
+    imagemin = require('gulp-imagemin');
 
 var bowerJSFiles = [
   './public/bower_components/angular/angular.min.js',
@@ -27,6 +28,18 @@ var myJSFiles = [
   './public/js/lazy-javascript.js'
 ];
 
+var projectImageFiles = [
+  './public/imgs/projects/md-grey-circle.png',
+  './public/imgs/projects/md-orange-pyramids.png',
+  './public/imgs/projects/md-site-cover.png',
+  './public/imgs/projects/md-teal-tri.png'
+];
+
+var homeImageFiles = [
+  './public/imgs/materialLongboard.png',
+  './public/imgs/codeghost.png'
+];
+
 gulp.task('sass', function () {
   // process.stdout.write('[INFO] Change detected SCSS generating CSS.\n');
   
@@ -37,12 +50,13 @@ gulp.task('sass', function () {
   // process.stdout.write('[INFO] CSS Successfully generated.\n');
 });
 
-gulp.task('myConcat', function() {
-  gulp.src(myJSFiles)
-    .pipe(sourceMaps.init())
-    .pipe(concat('./js/alfred-material.js'))
-    .pipe(sourceMaps.write())
-    .pipe(gulp.dest('./public/'));
+gulp.task('imagemin', function() {
+  gulp.src(projectImageFiles)
+  .pipe(imagemin());
+
+  gulp.src(homeImageFiles)
+  .pipe(imagemin());
+  // .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('minify', function() {
@@ -84,7 +98,7 @@ gulp.task('deploy', function() {
   nodemon({
     script: 'bin/www',
     ext: 'js html',
-    tasks: ['sass', 'concat', 'minify'],
+    tasks: ['sass', 'concat', 'minify', 'imagemin'],
     env: { 
       'NODE_ENV': 'production',
       'PORT' : '80'
