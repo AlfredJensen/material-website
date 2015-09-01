@@ -68,15 +68,12 @@ gulp.task('minify', function() {
         .pipe(ngAnnotate())
         .pipe(uglify({ 'mangle' : false }))
         .pipe(gulp.dest('./public/js'));
-
-  gulp.src('./bower_components/bower_components.min.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('./public/bower_components/bower_components.min.js'))
 });
 
 gulp.task('concat', function() {
   gulp.src(bowerJSFiles)
     .pipe(concat('./bower_components/bower_components.min.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('./public/'));
 
     gulp.src(myJSFiles)
