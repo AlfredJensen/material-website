@@ -17,9 +17,7 @@ router.get('/resume', function(req, res, next) {
     maxAge: 86400000
   }
 
-  res.sendFile(resumePath, options, function(err) {
-
-  });
+  res.sendFile(resumePath, options);
 });
 
 router.get('/old', function(req, res, next) {

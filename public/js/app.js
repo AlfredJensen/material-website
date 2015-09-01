@@ -141,6 +141,11 @@ app.controller('NavCtrl', function($scope, $location, $mdSidenav, $log) {
   };
 
   $scope.navigateTo = function(url) {
-    $location.path(url);
+    if (url == '/resume') {
+      $window.location.href = url;
+    } else {
+      $location.path(url);      
+    }
+
   };
 });
