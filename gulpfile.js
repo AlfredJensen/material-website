@@ -37,7 +37,9 @@ var projectImageFiles = [
 
 var homeImageFiles = [
   './public/imgs/materialLongboard.png',
-  './public/imgs/codeghost.png'
+  './public/imgs/codeghost.png',
+  './public/imgs/me-home.png',
+  './public/imgs/trinity-war-massive.png'
 ];
 
 gulp.task('sass', function () {
@@ -52,11 +54,12 @@ gulp.task('sass', function () {
 
 gulp.task('imagemin', function() {
   gulp.src(projectImageFiles)
-  .pipe(imagemin());
+  .pipe(imagemin())
+  .pipe(gulp.dest('public/imgs/projects/'));
 
   gulp.src(homeImageFiles)
-  .pipe(imagemin());
-  // .pipe(gulp.dest('dist/images'));
+  .pipe(imagemin())
+  .pipe(gulp.dest('public/imgs/'));
 });
 
 gulp.task('minify', function() {
