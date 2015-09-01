@@ -51,7 +51,12 @@ app.config(function($routeProvider, $mdThemingProvider, $window) {
     })
     .when('/resume', {
       redirectTo: function() {
-        $window.location.href ='/resume';
+        $window.location.href = '/resume';
+      }
+    })
+    .when('/resume.pdf', {
+      redirectTo: function() {
+        $window.location.href = '/resume');
       }
     })
     .when('/old', {
