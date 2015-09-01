@@ -18,9 +18,7 @@ router.get('/resume', function(req, res, next) {
   }
 
   res.sendFile(resumePath, options, function(err) {
-    if (err) {
-      res.redirect('/resume.pdf');
-    }
+
   });
 });
 

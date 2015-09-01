@@ -29,7 +29,7 @@ app.config(function($locationProvider) {
   $locationProvider.html5Mode(true);
 });
 
-app.config(function($routeProvider, $mdThemingProvider) {
+app.config(function($routeProvider, $mdThemingProvider, $window) {
   $routeProvider
     .when('/', {
       templateUrl: '/views/home/home.html',
@@ -51,17 +51,17 @@ app.config(function($routeProvider, $mdThemingProvider) {
     })
     .when('/resume', {
       redirectTo: function() {
-        window.location ='/resume.pdf';
+        $window.location.href ='/resume';
       }
     })
     .when('/old', {
       redirectTo: function() {
-        window.location = '/old';
+        $window.location.href = '/old';
       }
     })
     .when('/mean', {
       redirectTo: function() {
-        window.location ='/mean';
+        $window.location.href ='/mean';
       }
     })
     .otherwise({
