@@ -29,7 +29,7 @@ app.config(function($locationProvider) {
   $locationProvider.html5Mode(true);
 });
 
-app.config(function($routeProvider, $mdThemingProvider, $window) {
+app.config(function($routeProvider, $mdThemingProvider) {
   $routeProvider
     .when('/', {
       templateUrl: '/views/home/home.html',
@@ -51,12 +51,7 @@ app.config(function($routeProvider, $mdThemingProvider, $window) {
     })
     .when('/resume', {
       redirectTo: function() {
-        $window.location.href = '/resume';
-      }
-    })
-    .when('/resume.pdf', {
-      redirectTo: function() {
-        $window.location.href = '/resume');
+        $window.location.href ='/resume';
       }
     })
     .when('/old', {
@@ -107,7 +102,7 @@ app.controller('AppCtrl', function($scope, $log, $location) {
   });
 });
 
-app.controller('NavCtrl', function($scope, $location, $mdSidenav, $log) {
+app.controller('NavCtrl', function($scope, $location, $mdSidenav, $log, $window) {
   $scope.$on('$routeChangeSuccess', function (event, data) {
     $scope.pageTitle = data.title;
     $scope.iconColor = data.iconColor;
