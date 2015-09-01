@@ -72,8 +72,8 @@ gulp.task('minify', function() {
 
 gulp.task('concat', function() {
   gulp.src(bowerJSFiles)
-    .pipe(concat('./bower_components/bower_components.min.js'))
     .pipe(uglify())
+    .pipe(concat('./bower_components/bower_components.min.js'))
     .pipe(gulp.dest('./public/'));
 
     gulp.src(myJSFiles)
