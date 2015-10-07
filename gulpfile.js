@@ -105,7 +105,7 @@ gulp.task('deploy', function() {
     tasks: ['sass', 'concat', 'minify', 'imagemin'],
     env: { 
       'NODE_ENV': 'production',
-      'PORT' : '80'
+      'PORT' : '3000'
      }
   });
 });
