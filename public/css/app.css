@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500);
 body, html {
   background-color: #e9eaed;
   height: 100%; }
@@ -120,8 +120,10 @@ body, html {
 #contact-info .md-button {
   min-width: 0px;
   margin: 0; }
+
 #contact-info ul {
   padding-left: 0px; }
+
 #contact-info a {
   color: #448AFF; }
 

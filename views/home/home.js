@@ -1,15 +1,15 @@
 app.controller('HomeCtrl', function($scope, $sce) {
   $scope.hobbies = [{
     name: "Longboarder",
-    desc: ["I learned to ride about a year ago, and learning might have been one of the" +
+    desc: $sce.trustAsHtml("I learned to ride about a year ago, and learning might have been one of the" +
           "  best things I\'ve ever done. It\'s a really fun way to get" +
-          " around and an even better way to stay active.",
-          " I even managed to design a decal and paint it onto my board!"]
+          " around and an even better way to stay active.</p><p>" +
+          " I even managed to design a decal and paint it onto my board!"),
   },{
     name: "Comic Reader",
-    desc: ["I\'m a huge DC comics fan. I can appreciate the amount of work that goes into building a multiverse.",
-          "There are so many moving parts to factor in and it\'s amazing to see how " + 
-          " authors can continue to innovate the characters and present their fans with new topics to think about every issue."],
+    desc: $sce.trustAsHtml("I\'m a huge DC comics fan. I can appreciate the amount of work that goes into building a multiverse.</p>" +
+          "<p>There are so many moving parts to factor in and it\'s amazing to see how authors can " + 
+          "continue to innovate the characters and present their fans with new topics to think about every issue."),
     link: "#comics"
   },{
     name: "Developer",
@@ -40,9 +40,8 @@ app.controller('HomeCtrl', function($scope, $sce) {
 
   $scope.aboutText = {          
     intro: "Hi, I\'m Alfred.",     
-    body: [
-      "I\'m a Computer Science student at Northeastern, an amateur pool (pocket billiards) player, " + 
-      "and a firm believer that anyone can learn to do anything by Googling it long enough.",
-      "Also, my friends think I\'m a pretty cool guy (even though they\'ll deny it after reading this.)"]
+    body: $sce.trustAsHtml("I\'m a Computer Science student at Northeastern, an amateur pool (pocket billiards) player, " + 
+      "and a firm believer that anyone can learn to do anything by Googling it long enough.</p><p>" +
+      "Also, my friends think I\'m a pretty cool guy (even though they\'ll deny it after reading this.)"),
   };  
 });
