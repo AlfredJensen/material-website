@@ -64,9 +64,11 @@ gulp.task('imagemin', function() {
 
 gulp.task('minify', function() {
   gulp.src('./public/js/alfred-material.js')
+        .pipe(sourceMaps.init())
         .pipe(concat('alfred-material.min.js'))
         .pipe(ngAnnotate())
         .pipe(uglify({ 'mangle' : false }))
+        .pipe(sourceMaps.write())
         .pipe(gulp.dest('./public/js'));
 });
 
@@ -77,9 +79,7 @@ gulp.task('concat', function() {
     .pipe(gulp.dest('./public/'));
 
     gulp.src(myJSFiles)
-    .pipe(sourceMaps.init())
     .pipe(concat('./js/alfred-material.js'))
-    .pipe(sourceMaps.write())
     .pipe(gulp.dest('./public/'));
 });
 
