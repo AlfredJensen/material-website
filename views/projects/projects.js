@@ -1,4 +1,4 @@
-app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdDialog) {
+app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdDialog, $sce) {
 
   $scope.allProjects = {
     'mdSite': {
@@ -16,15 +16,15 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "screenshot": '/imgs/projects/ef.png',
       "description": '',
       "repository": '',
-      "info": ['TurboTax Exemption Check is a tool for customers to find out whether they are exempt from the healthcare penalty for that tax year. ' + 
+      "info": $sce.trustAsHtml('TurboTax Exemption Check is a tool for customers to find out whether they are exempt from the healthcare penalty for that tax year. ' + 
                 'While working on Exemption Check, I was an engineer responsible for implementing cross-device data persistence. ' + 
                 'This allowed customers to start the application on one device and sign out, and then sign back in on a second device' + 
-                'and complete their application where they left off.',
+                'and complete their application where they left off.</p><p>'+
                'I was also part of the small team that was tasked with a massive rewrite of the tool once the Affordable Care Act ' + 
                 'law changed to allow one form per household instead of one form per member of the household. This required rapid ' + 
-                'implementation of features and also required that we didn’t break the core functionality as that was still the primary use-case.', 
+                'implementation of features and also required that we didn’t break the core functionality as that was still the primary use-case.</p><p>' +
                'I was a full-stack engineer, as I worked with the backend services as much as I was doing CSS tweaks on the frontend which' + 
-               ' required comprehensive unit tests for both. During peak times I was also responsible for monitoring our Splunk logs for service outtages and errors.'],
+               ' required comprehensive unit tests for both. During peak times I was also responsible for monitoring our Splunk logs for service outtages and errors.'),
       "demoLink": 'https://turbotax.intuit.com/health-care/exemptions',
       "tech": [],
       "learned": '',
@@ -53,15 +53,15 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
       "screenshot": '/imgs/projects/md-teal-tri.jpg',
       "description": '',
       "repository": '',
-      "info": ['While working on Cengage Moderator, I was on a small team of engineers who had a lot of freedom over the architecture ' + 
-                'and technology used to create a question and answer application for the company to use to ask questions of the CTO during his office hours.', 
+      "info": $sce.trustAsHtml('While working on Cengage Moderator, I was on a small team of engineers who had a lot of freedom over the architecture ' + 
+                'and technology used to create a question and answer application for the company to use to ask questions of the CTO during his office hours.</p><p>' +
                 'I was responsible for architecting the user model. This means that I implemented user account creation, user sessions and ' + 
                 'account recovery. All of my solutions were created in-house as the popular Ruby gem, “devise” was too heavy for the simplicity of the project. ' + 
-                'A long with user accounts, I also implemented user profiles and access levels for roles. ',
+                'A long with user accounts, I also implemented user profiles and access levels for roles.</p><p> ' +
                 'Due to the nature of the application, we had many nested data-models and my team had to teach ' + 
                 'ourselves relational data models. For example, we used many-to-many for users favoriting and voting ' + 
                 'on questions, so that a user could browse their favorite questions. I also set up automated unit and ' + 
-                'integration testing suites and wrote some of the frontend interactions.'],
+                'integration testing suites and wrote some of the frontend interactions.'),
       "demoLink": 'http://moderator.cengage.com',
       "tech": [],
       "learned": ''
@@ -91,7 +91,7 @@ app.controller('ProjectsCtrl', function($scope, $timeout, $mdSidenav, $log, $mdD
             '   </div>' +
             '  </md-toolbar>' +
             '  <md-dialog-content>'+
-            '    <p class="intent-p" ng-repeat="p in project.info">{{p}}</p>' +
+            '    <p class="intent-p" ng-bind-html="project.info"></p>' +
             '  </md-dialog-content>' +
             '  <div class="md-actions">' +
             '    <md-button ng-click="closeProjectInfo()" class="md-primary">' +
