@@ -105,17 +105,77 @@ body, html {
   color: #388e3c;
   font-weight: normal; }
 
+#about .card-image {
+  height: auto; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    #about .card-image {
+      max-height: 398px; } }
+  @media (min-width: 960px) and (max-width: 991px) {
+    #about .card-image {
+      max-height: 154px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #about .card-image {
+      max-height: 206px; } }
+  @media (min-width: 1200px) {
+    #about .card-image {
+      max-height: 245px; } }
+
 #developer h2 {
   color: #424242;
   font-weight: normal; }
+
+#developer .card-image {
+  height: auto; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    #developer .card-image {
+      max-height: 307px; } }
+  @media (min-width: 960px) and (max-width: 991px) {
+    #developer .card-image {
+      max-height: 119px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #developer .card-image {
+      max-height: 156px; } }
+  @media (min-width: 1200px) {
+    #developer .card-image {
+      max-height: 189px; } }
 
 #longboard h2 {
   color: #8e24aa;
   font-weight: normal; }
 
+#longboard .card-image {
+  height: auto; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    #longboard .card-image {
+      max-height: 270px; } }
+  @media (min-width: 960px) and (max-width: 991px) {
+    #longboard .card-image {
+      max-height: 105px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #longboard .card-image {
+      max-height: 137px; } }
+  @media (min-width: 1200px) {
+    #longboard .card-image {
+      max-height: 167px; } }
+
 #comics h2 {
   color: #ad1457;
   font-weight: normal; }
+
+#comics .card-image {
+  height: auto; }
+  @media (min-width: 768px) and (max-width: 959px) {
+    #comics .card-image {
+      max-height: 380px; } }
+  @media (min-width: 960px) and (max-width: 991px) {
+    #comics .card-image {
+      max-height: 147px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #comics .card-image {
+      max-height: 192px; } }
+  @media (min-width: 1200px) {
+    #comics .card-image {
+      max-height: 234px; } }
 
 #contact-info .md-button {
   min-width: 0px;
