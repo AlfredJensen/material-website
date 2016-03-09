@@ -1,4 +1,4 @@
-app.controller('HomeCtrl', function($scope, $sce) {
+app.controller('HomeCtrl', function( $scope, $sce, $window ) {
   $scope.hobbies = [{
     name: "Longboarder",
     desc: $sce.trustAsHtml("I learned to ride about a year ago, and learning might have been one of the" +
@@ -43,5 +43,38 @@ app.controller('HomeCtrl', function($scope, $sce) {
     body: $sce.trustAsHtml("I\'m a Computer Science student at Northeastern, an amateur pool (pocket billiards) player, " + 
       "and a firm believer that anyone can learn to do anything by Googling it long enough.</p><p>" +
       "Also, my friends think I\'m a pretty cool guy (even though they\'ll deny it after reading this.)"),
-  };  
+  };
+
+  var initialize = function() {
+    window.addEventListener('resize', resizeImages);
+    if (window.innerWidth <= 768) {
+      console.log('In Mobile');
+      window.onload = resizeImages();
+      resizeImages();
+      console.log('Resized');
+    }
+  };
+
+  var resizeImages = function() {
+    if ( window.innerWidth > 768 ) {
+      return;
+    }
+    var myPicture = document.querySelector('#about > .card-image');
+    var codePicture = document.querySelector('#developer > .card-image');
+    var longboardPicture = document.querySelector('#longboard > .card-image');
+    var comicsPicture = document.querySelector('#comics > .card-image');
+
+    var myRatio = 165 / 304; 
+    var codeRatio = 127 / 304;
+    var longboardRatio = 112 / 304;
+    var comicsRatio = 157 / 304;
+
+    myPicture.style.maxHeight = '' + ( myPicture.clientWidth * myRatio ) +'px';
+    codePicture.style.maxHeight = '' + ( codePicture.clientWidth * myRatio ) +'px';
+    longboardPicture.style.maxHeight = '' + ( longboardPicture.clientWidth * myRatio ) +'px';
+    comicsPicture.style.maxHeight = '' + ( comicsPicture.clientWidth * myRatio ) +'px';
+  };
+
+  initialize();
+
 });

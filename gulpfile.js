@@ -87,7 +87,7 @@ gulp.task('watch', function () {
   // Need to add JSLint here
   gulp.watch('./scss/*.scss', ['sass']);
 
-  gulp.watch(myJSFiles.concat(bowerJSFiles), ['concat']);
+  gulp.watch(myJSFiles.concat(bowerJSFiles), ['concat', 'minify']);
 });
 
 gulp.task('start', function () {
