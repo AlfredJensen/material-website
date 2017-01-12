@@ -44,11 +44,11 @@ var homeImageFiles = [
 
 gulp.task('sass', function () {
   // process.stdout.write('[INFO] Change detected SCSS generating CSS.\n');
-  
+
   gulp.src('./scss/*.scss')
     .pipe(sass())
     .pipe(gulp.dest('./public/css'));
-  
+
   // process.stdout.write('[INFO] CSS Successfully generated.\n');
 });
 
@@ -74,7 +74,6 @@ gulp.task('minify', function() {
 
 gulp.task('concat', function() {
   gulp.src(bowerJSFiles)
-    .pipe(uglify())
     .pipe(concat('./bower_components/bower_components.min.js'))
     .pipe(gulp.dest('./public/'));
 
@@ -92,7 +91,7 @@ gulp.task('watch', function () {
 
 gulp.task('start', function () {
   nodemon({
-    script: 'bin/www', 
+    script: 'bin/www',
     ext: 'js html',
     env: { 'NODE_ENV': 'development' }
   });
@@ -103,7 +102,7 @@ gulp.task('deploy', function() {
     script: 'bin/www',
     ext: 'js html',
     tasks: ['sass', 'concat', 'minify', 'imagemin'],
-    env: { 
+    env: {
       'NODE_ENV': 'production',
       'PORT' : '3000'
      }
